@@ -1,0 +1,26 @@
+
+
+To Do:
+
+    Max priority:
+        Delete
+        Edit files online
+        Check if files are already uploaded
+        Replace CSVs
+
+
+
+    Mid priority:
+        If uploaded file is in DB, check if their content is equal
+
+
+
+    Low priority:
+        Front end (Bootstrap)
+
+
+
+Done:
+    Upload
+    Download
+    Login

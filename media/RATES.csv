@@ -1,0 +1,473 @@
+ID,CATEGORY,FAMILY,FAMILY_DESC,SUB_CATEGORY,SUB_CATEGORY_DESCRIPTION,COUNTRY,COUNTRY_CODE,AIRPORT,IATA_AIRPORT_CODE,UNIT_RATE,UNIT_RATE_2,UNIT_RATE_3
+T3Cuba_Aguas_ResidualesESTFS,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Tenerife Sur,TFS,38.47,0.0,0.0
+T3Cuba_Agua_PotableESAGP,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Malaga,AGP,38.47,0.0,0.0
+T3Handling_DeicingESACE,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Lanzarote,ACE,2.88,0.0,0.0
+T3Handling_Limpieza_EstandarESOVD,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Asturias,OVD,82.45,0.0,0.0
+T2Fuel_SERVICE_ES1ESMAD,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Madrid,MAD,530.5,4.13,25.0
+T1AterrizajeESTFN,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Tenerife Norte,TFN,5.691663,0.0,0.0
+T1AterrizajeESFUE,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Fuerteventura,FUE,5.691663,0.0,0.0
+T1Aerodromo_Y_TransitoESOVD,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Asturias,OVD,2.383779,0.0,0.0
+T1Aerodromo_Y_TransitoESFUE,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Fuerteventura,FUE,3.045355,0.0,0.0
+T1Energia a 400Hz (1 conexión) no UEFRCDG,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia a 400Hz (1 conexión) no UE,Energia a 400Hz (1 conexión) no UE,Francia,FR,Paris Charles de Gaulle,CDG,22.02,2.0,0.0
+T1Aterrizaje día Group 3 (EPNdB between 5 and 8 dB)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje día Group 3 (EPNdB between 5 and 8 dB),Aterrizaje día Group 3 (EPNdB between 5 and 8 dB),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.15
+T1Aterrizaje con pasarela a terminal de 23:01 a 05:58NLAMS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje con pasarela a terminal de 23:01 a 05:58,Aterrizaje con pasarela a terminal de 23:01 a 05:59,Holanda,NL,Amsterdam,AMS,4.09,81.8,1.27
+T1Estacionamiento_2h_Invierno_GeneralITNAP,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_2h_Invierno_General,Estacionamiento (a partir de las dos horas) temporada invierno dia/noche,Italia,IT,Napoles,NAP,0.21,0.0,0.0
+T2Fuel_SERVICEPTLIS,Fuel expenses,FUEL,FUEL,Fuel_SERVICE,Fuel service,Portugal,PT,Lisboa,LIS,501.0,0.0,0.0
+T1Aterrizaje (noche horas pico) Chapter 4 baseUKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje (noche horas pico) Chapter 4 base,Aterrizaje (noche horas pico) Chapter 4 base,Reino Unido,UK,Londres Heathrow,LHR,5319.0,0.0,0.0
+T1PMRUKLGW,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR General,Reino Unido,UK,Londres Gatwick,LGW,0.323221,0.0,0.0
+T3Cuba_Aguas_ResidualesESACE,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Lanzarote,ACE,38.47,0.0,0.0
+T1PMRESACE,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Lanzarote,ACE,0.59,0.0,0.0
+T1Aterrizaje día Group 5b (EPNdb above 20 dB)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje día Group 5b (EPNdb above 20 dB),Aterrizaje día Group 5b (EPNdb above 20 dB),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,0.7
+T1Pasajero de salida InternacionalFRCDG,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero de salida Internacional,Pasajero de salida Internacional,Francia,FR,Paris Charles de Gaulle,CDG,22.6,0.0,0.0
+T1Pasajero domestico/schengenFRNCE,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero domestico/schengen,Pasajero domestico/schengen,Francia,FR,Niza,NCE,7.31,0.0,0.0
+T1Pasajeros (niños de 2 a 12 años) temporada de verano UEITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros (niños de 2 a 12 años) temporada de verano UE,Pasajeros (niños de 2 a 12 años) temporada de verano UE,Italia,IT,Napoles,NAP,5.83,0.0,0.0
+T1Aterrizaje (aviones de mas de 150 toneladas)PTLIS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje (aviones de mas de 150 toneladas),Aterrizaje (aviones de mas de 150 toneladas),Portugal,PT,Lisboa,LIS,6.55,0.0,0.0
+T1Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 3 baseUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 3 base,Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 3 base,Reino Unido,UK,Londres Gatwick,LGW,240.21,0.0,0.0
+T1Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 3 minusUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 3 minus,Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 3 minus,Reino Unido,UK,Londres Gatwick,LGW,216.21,0.0,0.0
+T3Cuba_Agua_PotableESVGO,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Vigo,VGO,38.47,0.0,0.0
+T3Cuba_Agua_PotableESLPA,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Gran Canaria,LPA,38.47,0.0,0.0
+T3Handling_DeicingESTFN,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Tenerife Norte,TFN,2.88,0.0,0.0
+T4Navigation_ChargesCANARY,Tasas de navegación,NAVIGATION,NAVIGATION,Navigation_Charges,Navigation charges,España,CANARY,CANARY,-,58.43,0.0,0.0
+T1Energia_400Hz_15_MinESVGO,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Vigo,VGO,6.851524,0.0,0.0
+T1AterrizajeESMAD,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Madrid,MAD,8.117446,0.0,0.0
+T1Pasajero_INTLESSCQ,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Santiago,SCQ,8.05,0.0,0.0
+T1PMRESVGO,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Vigo,VGO,0.59,0.0,0.0
+T1SeguridadESPMI,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Palma de Mallorca,PMI,3.63,0.0,0.0
+T1Aterrizaje_All_Day_FR1FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_All_Day_FR1,Aterrizaje_All_Day_FR1,Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.15
+T1Aterrizaje noche Group 5b (EPNdb above 20 dB)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje noche Group 5b (EPNdb above 20 dB),Aterrizaje noche Group 5b (EPNdb above 20 dB),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.05
+T1Pasajero de salida UE no Schengen en transferFRCDG,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero de salida UE no Schengen en transfer,Pasajero de salida UE no Schengen en transfer,Francia,FR,Paris Charles de Gaulle,CDG,5.89,0.0,0.0
+T1Pasajero internacionalFRNCE,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero internacional,Pasajero internacional,Francia,FR,Niza,NCE,11.42,0.0,0.0
+T4Navigation_ChargesNL,Tasas de navegación,NAVIGATION,NAVIGATION,Navigation_Charges,Navigation charges,Holanda,NL,ALL,-,66.33,0.0,0.0
+T1Aterrizaje en remoto sin pasarela a terminal de 06:00 a 23:01NLAMS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje en remoto sin pasarela a terminal de 06:00 a 23:01,Aterrizaje en remoto sin pasarela a terminal de 06:00 a 23:00,Holanda,NL,Amsterdam,AMS,3.27,65.24,0.0
+T1Pasajero_INTLPTLIS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajeros internacional ,Portugal,PT,Lisboa,LIS,19.42,0.0,0.0
+T3Handling_DeicingUKLGW,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,Reino Unido,UK,Londres Gatwick,LGW,3.328125,0.0,0.0
+T3Handling_BasicoUKLGW,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",Reino Unido,UK,Londres Gatwick,LGW,923.323688,0.0,0.0
+T1Aterrizaje_All_Day_UK2UKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_All_Day_UK2,Aterrizaje_AllDay - Gatwick,Reino Unido,UK,Londres Gatwick,LGW,718.104269,0.0,0.0
+T1Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 3 baseUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 3 base,Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 3 base,Reino Unido,UK,Londres Gatwick,LGW,731.85,0.0,0.0
+T1Estacionamiento_Remoto180DETXL,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_Remoto180,Estacionamiento en remoto (hasta 180 min),Alemania,DE,Berlin Tegel Airport,TXL,0.34,0.0,0.0
+T3Cuba_Aguas_ResidualesESFUE,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Fuerteventura,FUE,38.47,0.0,0.0
+T3Cuba_Agua_PotableESFUE,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Fuerteventura,FUE,38.47,0.0,0.0
+T3Handling_DeicingESFUE,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Fuerteventura,FUE,2.88,0.0,0.0
+T1Pasajero_EEEESAGP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Malaga,AGP,6.3,0.0,0.0
+T1Pasajero_INTLESFUE,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Fuerteventura,FUE,8.05,0.0,0.0
+T1Pasajero de salida UE Schengen InternacionalFRCDG,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero de salida UE Schengen Internacional,Pasajero de salida UE Schengen Internacional,Francia,FR,Paris Charles de Gaulle,CDG,8.92,0.0,0.0
+T1Pasajero_TransferNLAMS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Transfer,Pasajeros en transfer,Holanda,NL,Amsterdam,AMS,5.22,0.0,0.0
+T3Cuba_Aguas_ResidualesITNAP,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,Italia,IT,Napoles,NAP,35.0,0.0,0.0
+T1Estacionamiento (a partir de las dos horas) temporada verano durante el diaITNAP,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento (a partir de las dos horas) temporada verano durante el dia,Estacionamiento (a partir de las dos horas) temporada verano durante el dia,Italia,IT,Napoles,NAP,0.28,0.0,0.0
+T1Pasajero_Adulto_VeranoITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Adulto_Verano,Pasajero Adulto Vernao,Italia,IT,Napoles,NAP,11.66,0.0,0.0
+T1Seguridad_PasajeroITNAP,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad_Pasajero,Seguridad pasajeros,Italia,IT,Napoles,NAP,3.53,0.0,0.0
+T3Cuba_Aguas_ResidualesPTLIS,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,Portugal,PT,Lisboa,LIS,35.0,0.0,0.0
+T2Fuel_SERVICEUKLGW,Fuel expenses,FUEL,FUEL,Fuel_SERVICE,Fuel service,Reino Unido,UK,Londres Gatwick,LGW,859.9982,0.0,0.0
+T1PMR con aviso previo < 48 horasUKLGW,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR con aviso previo < 48 horas,PMR con aviso previo < 48 horas,Reino Unido,UK,Londres Gatwick,LGW,1.1,0.0,0.0
+T1PMR con aviso previo > 48 horasUKLGW,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR con aviso previo > 48 horas,PMR con aviso previo > 48 horas,Reino Unido,UK,Londres Gatwick,LGW,0.28,0.0,0.0
+T3Handling_DeicingESIBZ,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Ibiza,IBZ,2.88,0.0,0.0
+T3Handling_BasicoESIBZ,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Ibiza,IBZ,1100.0,0.0,0.0
+T1Pasarelas_TELESESVGO,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Vigo,VGO,24.658345,0.0,0.0
+T1Energia_400Hz_15_MinESAGP,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Malaga,AGP,6.851524,0.0,0.0
+T2Fuel_SERVICE_ES1ESLPA,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Gran Canaria,LPA,525.0,4.13,25.0
+T1AterrizajeESACE,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Lanzarote,ACE,5.691663,0.0,0.0
+T1EstacionamientoESBCN,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Barcelona,BCN,0.117963,0.0,0.0
+T1Pasajero_EEEESMAD,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Madrid,MAD,15.17,0.0,0.0
+T1Pasajero_INTLESACE,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Lanzarote,ACE,8.05,0.0,0.0
+T1Aerodromo_Y_TransitoESPMI,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Palma de Mallorca,PMI,3.318386,0.0,0.0
+T1Estacionamiento_FR2FRNCE,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_FR2,Estacionamiento (mas de 75 minutos) mas de 18 toneladas,Francia,FR,Niza,NCE,0.33,0.0,0.0
+T1Estacionamiento (a partir de las dos horas) temporada invierno durante el diaITNAP,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento (a partir de las dos horas) temporada invierno durante el dia,Estacionamiento (a partir de las dos horas) temporada invierno durante el dia,Italia,IT,Napoles,NAP,0.21,0.0,0.0
+T1Aterrizaje_26_75PTLIS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_26_75,Aterrizaje (aviones de 26 a 75 toneladas),Portugal,PT,Lisboa,LIS,7.34,0.0,0.0
+T1Pasajero_UE_Y_DomesticoPTLIS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_UE_Y_Domestico,Pasajero UE y domestico,Portugal,PT,Lisboa,LIS,10.88,0.0,0.0
+T1Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 3 highUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 3 high,Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 3 high,Reino Unido,UK,Londres Gatwick,LGW,1525.66,0.0,0.0
+T1PMRUKLHR,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR General,Reino Unido,UK,Londres Heathrow,LHR,1.350601,0.0,0.0
+T1Transito_Terminal_NavigationUKLGW,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Transito_Terminal_Navigation,Transito (terminal navigation),Reino Unido,UK,Londres Gatwick,LGW,15.849363,0.0,0.0
+T1Estacionamiento_Pasarela180DETXL,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_Pasarela180,Estacionamiento con pasarela (hasta 180 min),Alemania,DE,Berlin Tegel Airport,TXL,0.8,0.0,0.0
+T1PMRDETXL,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,Alemania,DE,Berlin Tegel Airport,TXL,0.21,0.0,0.0
+T3Cuba_Aguas_ResidualesESIBZ,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Ibiza,IBZ,38.47,0.0,0.0
+T3Cuba_Agua_PotableESACE,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Lanzarote,ACE,38.47,0.0,0.0
+T3Handling_DeicingESMAD,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Madrid,MAD,2.88,0.0,0.0
+T1Pasarelas_TELESESPMI,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Palma de Mallorca,PMI,25.644725,0.0,0.0
+T1Pasarelas_TELESESFUE,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Fuerteventura,FUE,24.658345,0.0,0.0
+T1Energia_400Hz_15_MinESBCN,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Barcelona,BCN,6.851524,0.0,0.0
+T1Energia_400Hz_15_MinESTFN,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Tenerife Norte,TFN,6.851524,0.0,0.0
+T1Energia_400Hz_15_MinESTFS,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Tenerife Sur,TFS,6.851524,0.0,0.0
+T1EstacionamientoESAGP,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Malaga,AGP,0.116888,0.0,0.0
+T1EstacionamientoESIBZ,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Ibiza,IBZ,0.064949,0.0,0.0
+T1Pasajero_EEEESSVQ,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Sevilla,SVQ,5.36,0.0,0.0
+T1Pasajero_INTLESLPA,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Gran Canaria,LPA,9.48,0.0,0.0
+T1PMRESTFN,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Tenerife Norte,TFN,0.59,0.0,0.0
+T1SeguridadESSVQ,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Sevilla,SVQ,3.63,0.0,0.0
+T1Aterrizaje noche Group 2 (EPNdB between 0 and 5 db)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje noche Group 2 (EPNdB between 0 and 5 db),Aterrizaje noche Group 2 (EPNdB between 0 and 5 db),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.8
+T1Seguridad_Origen_DestinoNLAMS,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad_Origen_Destino,Seguridad pasajeros Origen/Destino,Holanda,NL,Amsterdam,AMS,10.53,0.0,0.0
+T3Cuba_Aguas_ResidualesNLAMS,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,Holanda,NL,Amsterdam,AMS,35.0,0.0,0.0
+T3Cuba_Agua_PotableITNAP,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,Italia,IT,Napoles,NAP,35.0,0.0,0.0
+T1Energia_400Hz_60_MinITNAP,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_60_Min,Energia a 400Hz ,Italia,IT,Napoles,NAP,4.08,0.0,0.0
+T1Pasajeros (mas de 12 años) temporada verano no UEITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros (mas de 12 años) temporada verano no UE,Pasajeros (mas de 12 años) temporada verano no UE,Italia,IT,Napoles,NAP,17.35,0.0,0.0
+T3Cuba_Agua_PotablePTLIS,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,Portugal,PT,Lisboa,LIS,35.0,0.0,0.0
+T1Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 2UKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 2,Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 2,Reino Unido,UK,Londres Gatwick,LGW,3051.32,0.0,0.0
+T1Pasajero_Origen_DestinoUKLHR,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Origen_Destino,Pasajero regional (de la UE con single discount) origen/destino,Reino Unido,UK,Londres Heathrow,LHR,27.854707,0.0,0.0
+T1Pasajeros_Sin_PasarelaUKLGW,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros_Sin_Pasarela,Pasajeros (aviones en remoto),Reino Unido,UK,Londres Gatwick,LGW,3.30147,0.0,0.0
+T1Estacionamiento_Pasarela0_40DETXL,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_Pasarela0_40,Estacionamiento con pasarela (0-40 min),Alemania,DE,Berlin Tegel Airport,TXL,0.62,0.0,0.0
+T3Cuba_Aguas_ResidualesESMAD,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Madrid,MAD,10.24,0.0,0.0
+T3Handling_Limpieza_EstandarESSCQ,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Santiago,SCQ,82.45,0.0,0.0
+T3Handling_BasicoESACE,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Lanzarote,ACE,1100.0,0.0,0.0
+T1Energia_400Hz_15_MinESACE,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Lanzarote,ACE,6.851524,0.0,0.0
+T2Fuel_SERVICE_ES1ESSVQ,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Sevilla,SVQ,530.5,4.13,25.0
+T1AterrizajeESIBZ,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Ibiza,IBZ,5.691663,0.0,0.0
+T1Pasajero_INTLESIBZ,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Ibiza,IBZ,8.05,0.0,0.0
+T1Pasajero_INTLESMAH,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Menorca,MAH,8.05,0.0,0.0
+T1PMRESSCQ,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Santiago,SCQ,0.59,0.0,0.0
+T1Aerodromo_Y_TransitoESSVQ,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Sevilla,SVQ,3.045355,0.0,0.0
+T3Cuba_Aguas_ResidualesFRCDG,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,Francia,FR,Paris Charles de Gaulle,CDG,35.0,0.0,0.0
+T1Pasajero de salida domesticoFRCDG,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero de salida domestico,Pasajero de salida domestico,Francia,FR,Paris Charles de Gaulle,CDG,8.92,0.0,0.0
+T3Handling_BasicoNLAMS,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",Holanda,NL,Amsterdam,AMS,799.0,0.0,0.0
+T3Handling_DeicingITNAP,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,Italia,IT,Napoles,NAP,2.88,0.0,0.0
+T3Handling_DeicingPTLIS,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,Portugal,PT,Lisboa,LIS,2.88,0.0,0.0
+T1Pasajero_UE_Y_Domestico_TransferPTLIS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_UE_Y_Domestico_Transfer,Pasajero UE y domestico en transfer,Portugal,PT,Lisboa,LIS,9.03,0.0,0.0
+T1Aterrizaje (noche horas pico) Chapter 14 lowUKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje (noche horas pico) Chapter 14 low,Aterrizaje (noche horas pico) Chapter 14 low,Reino Unido,UK,Londres Heathrow,LHR,1773.0,0.0,0.0
+T3Handling_DeicingESAGP,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Malaga,AGP,2.88,0.0,0.0
+T3Handling_Limpieza_EstandarESVGO,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Vigo,VGO,82.45,0.0,0.0
+T1Pasarelas_TELESESBCN,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Barcelona,BCN,29.160116,0.0,0.0
+T1Pasarelas_TELESESSVQ,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Sevilla,SVQ,24.658345,0.0,0.0
+T1AterrizajeESOVD,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Asturias,OVD,4.168986,0.0,0.0
+T1EstacionamientoESPMI,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Palma de Mallorca,PMI,0.116888,0.0,0.0
+T1EstacionamientoESSCQ,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Santiago,SCQ,0.064949,0.0,0.0
+T1SeguridadESVGO,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Vigo,VGO,3.63,0.0,0.0
+T1Aterrizaje día Group 2 (EPNdB between 0 and 5 db)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje día Group 2 (EPNdB between 0 and 5 db),Aterrizaje día Group 2 (EPNdB between 0 and 5 db),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.2
+T1Aterrizaje noche Group 3 (EPNdB between 5 and 8 dB)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje noche Group 3 (EPNdB between 5 and 8 dB),Aterrizaje noche Group 3 (EPNdB between 5 and 8 dB),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.725
+T1Aterrizaje noche Group 4 (EPNdB between 8 and 13 dB)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje noche Group 4 (EPNdB between 8 and 13 dB),Aterrizaje noche Group 4 (EPNdB between 8 and 13 dB),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.5
+T1Seguridad_TransferNLAMS,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad_Transfer,Seguridad pasajeros en transfer,Holanda,NL,Amsterdam,AMS,5.9,0.0,0.0
+T2Fuel_SERVICEITNAP,Fuel expenses,FUEL,FUEL,Fuel_SERVICE,Fuel service,Italia,IT,Napoles,NAP,515.0,0.0,0.0
+T1Estacionamiento (fuselaje ancho primera hora y cuarto) conectado a terminalUKLHR,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento (fuselaje ancho primera hora y cuarto) conectado a terminal,Estacionamiento (fuselaje ancho primera hora y cuarto) conectado a terminal,Reino Unido,UK,Londres Heathrow,LHR,0.0,0.0,0.0
+T2Fuel_SERVICEDETXL,Fuel expenses,FUEL,FUEL,Fuel_SERVICE,Fuel service,Alemania,DE,Berlin Tegel Airport,TXL,655.0,0.0,0.0
+T3Cuba_Agua_PotableDETXL,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,Alemania,DE,Berlin Tegel Airport,TXL,35.0,0.0,0.0
+T3Cuba_Aguas_ResidualesESOVD,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Asturias,OVD,38.47,0.0,0.0
+T3Cuba_Aguas_ResidualesESVGO,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Vigo,VGO,38.47,0.0,0.0
+T3Cuba_Agua_PotableESPMI,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Palma de Mallorca,PMI,38.47,0.0,0.0
+T3Handling_Limpieza_EstandarESLPA,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Gran Canaria,LPA,82.45,0.0,0.0
+T3Handling_BasicoESOVD,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Asturias,OVD,1100.0,0.0,0.0
+T1Pasarelas_TELESESIBZ,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Ibiza,IBZ,24.658345,0.0,0.0
+T2Fuel_SERVICE_ES1ESBCN,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Barcelona,BCN,530.5,4.13,25.0
+T2Fuel_SERVICE_ES1ESOVD,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Asturias,OVD,530.5,4.13,25.0
+T1AterrizajeESVGO,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Vigo,VGO,4.168986,0.0,0.0
+T1Pasajero_EEEESPMI,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Palma de Mallorca,PMI,6.3,0.0,0.0
+T1Aerodromo_Y_TransitoESAGP,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Malaga,AGP,3.318386,0.0,0.0
+T1Energía a 400Hz (2 conexiones) no UEFRCDG,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energía a 400Hz (2 conexiones) no UE,Energía a 400Hz (2 conexiones) no UE,Francia,FR,Paris Charles de Gaulle,CDG,44.04,2.0,0.0
+T1Estacionamiento en remotoFRCDG,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento en remoto,Estacionamiento en remoto,Francia,FR,Paris Charles de Gaulle,CDG,0.0,0.0,0.0
+T1Pasajeros (niños de 2 a 12 años) temporada de verano no UEITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros (niños de 2 a 12 años) temporada de verano no UE,Pasajeros (niños de 2 a 12 años) temporada de verano no UE,Italia,IT,Napoles,NAP,8.67,0.0,0.0
+T1PMRITNAP,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,Italia,IT,Napoles,NAP,0.79,0.0,0.0
+T1Transito_Terminal_NavigationITNAP,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Transito_Terminal_Navigation,Transito (terminal navigation),Italia,IT,Napoles,NAP,323.79,0.0,0.0
+T4Navigation_ChargesPT,Tasas de navegación,NAVIGATION,NAVIGATION,Navigation_Charges,Navigation chages Continental,Portugal,PT,ALL,-,40.19,0.0,0.0
+T1Aterrizaje (noche horas pico) Chapter 14 highUKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje (noche horas pico) Chapter 14 high,Aterrizaje (noche horas pico) Chapter 14 high,Reino Unido,UK,Londres Heathrow,LHR,4137.0,0.0,0.0
+T1Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 3 baseUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 3 base,Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 3 base,Reino Unido,UK,Londres Gatwick,LGW,731.85,0.0,0.0
+T1Pasajeros_GestionUKLGW,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros_Gestion,Pasajeros (checkin) tasa por gestión de pasajero de salida,Reino Unido,UK,Londres Gatwick,LGW,0.117745,0.0,0.0
+T3Handling_DeicingDETXL,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,Alemania,DE,Berlin Tegel Airport,TXL,30.0,0.0,0.0
+T3Handling_Limpieza_EstandarESAGP,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Malaga,AGP,82.45,0.0,0.0
+T1Pasarelas_TELESESAGP,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Malaga,AGP,25.644725,0.0,0.0
+T1Pasarelas_TELESESACE,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Lanzarote,ACE,24.658345,0.0,0.0
+T1Energia_400Hz_15_MinESSVQ,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Sevilla,SVQ,6.851524,0.0,0.0
+T1EstacionamientoESMAD,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Madrid,MAD,0.123663,0.0,0.0
+T1Pasajero_EEEESLPA,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Gran Canaria,LPA,6.3,0.0,0.0
+T1Pasajero_INTLESAGP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Malaga,AGP,9.48,0.0,0.0
+T1SeguridadESAGP,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Malaga,AGP,3.63,0.0,0.0
+T1Aerodromo_Y_TransitoESBCN,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Barcelona,BCN,3.381394,0.0,0.0
+T1Aerodromo_Y_TransitoESACE,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Lanzarote,ACE,3.045355,0.0,0.0
+T1Aerodromo_Y_TransitoESTFN,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Tenerife Norte,TFN,3.045355,0.0,0.0
+T1Aerodromo_Y_TransitoESTFS,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Tenerife Sur,TFS,3.381394,0.0,0.0
+T3Handling_BasicoFRCDG,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",Francia,FR,Paris Charles de Gaulle,CDG,799.0,0.0,0.0
+T1Aterrizaje en remoto sin pasarela a terminal de 23:01 a 05:58NLAMS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje en remoto sin pasarela a terminal de 23:01 a 05:58,Aterrizaje en remoto sin pasarela a terminal de 23:01 a 05:59,Holanda,NL,Amsterdam,AMS,3.27,65.24,1.27
+T1Estacionamiento (a partir de las dos horas) temporada verano durante la nocheITNAP,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento (a partir de las dos horas) temporada verano durante la noche,Estacionamiento (a partir de las dos horas) temporada verano durante la noche,Italia,IT,Napoles,NAP,0.18,0.0,0.0
+T1Seguridad_INTLPTLIS,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad_INTL,Seguridad vuelos internacionales,Portugal,PT,Lisboa,LIS,6.21,0.0,0.0
+T3Cuba_Aguas_ResidualesUKLHR,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,Reino Unido,UK,Londres Heathrow,LHR,40.445969,0.0,0.0
+T1Pasajero internacional (origen/destino)UKLHR,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero internacional (origen/destino),Pasajero internacional (origen/destino),Reino Unido,UK,Londres Heathrow,LHR,40.9,0.0,0.0
+T3Cuba_Aguas_ResidualesESLPA,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Gran Canaria,LPA,38.47,0.0,0.0
+T3Handling_Limpieza_EstandarESACE,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Lanzarote,ACE,82.45,0.0,0.0
+T3Handling_BasicoESSCQ,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Santiago,SCQ,1100.0,0.0,0.0
+T1EstacionamientoESACE,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Lanzarote,ACE,0.064949,0.0,0.0
+T1Pasajero_EEEESOVD,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Asturias,OVD,3.84,0.0,0.0
+T1Transito_Terminal_NavigationFRNCE,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Transito_Terminal_Navigation,Transito (terminal navigation),Francia,FR,Niza,NCE,226.19,0.0,0.0
+T2Fuel_SERVICENLAMS,Fuel expenses,FUEL,FUEL,Fuel_SERVICE,Fuel service,Holanda,NL,Amsterdam,AMS,632.0,0.0,0.0
+T3Cuba_Agua_PotableNLAMS,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,Holanda,NL,Amsterdam,AMS,35.0,0.0,0.0
+T1Pasarelas_0_2hPTLIS,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_0_2h,Pasarelas (de 0 a 2 horas),Portugal,PT,Lisboa,LIS,4.04,0.0,0.0
+T1Energia_400Hz_1_MinPTLIS,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_1_Min,Energia a 400Hz,Portugal,PT,Lisboa,LIS,1.39,0.0,0.0
+T1Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 3 highUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 3 high,Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 3 high,Reino Unido,UK,Londres Gatwick,LGW,500.76,0.0,0.0
+T1Estacionamiento (fuselaje estrecho mas de una hora y cuarto) conectado a terminalUKLHR,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento (fuselaje estrecho mas de una hora y cuarto) conectado a terminal,Estacionamiento (fuselaje estrecho mas de una hora y cuarto) conectado a terminal,Reino Unido,UK,Londres Heathrow,LHR,21.82,0.0,0.0
+T1Estacionamiento_Remoto0_40DETXL,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_Remoto0_40,Estacionamiento en remoto (0-40 min),Alemania,DE,Berlin Tegel Airport,TXL,0.16,0.0,0.0
+T1Pasajero_Salida_GeneralDETXL,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Salida_General,Pasajero de Salida General,Alemania,DE,Berlin Tegel Airport,TXL,12.82,0.0,0.0
+T3Cuba_Aguas_ResidualesESPMI,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Palma de Mallorca,PMI,38.47,0.0,0.0
+T3Cuba_Aguas_ResidualesESSCQ,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Santiago,SCQ,38.47,0.0,0.0
+T3Handling_DeicingESSVQ,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Sevilla,SVQ,2.88,0.0,0.0
+T1AterrizajeESAGP,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Malaga,AGP,6.783792,0.0,0.0
+T1Pasajero_INTLESBCN,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Barcelona,BCN,17.27,0.0,0.0
+T3Cuba_Agua_PotableFRNCE,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,Francia,FR,Niza,NCE,35.0,0.0,0.0
+T1Aterrizaje_18_25FRNCE,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_18_25,Aterrizaje (peso de 18-25 toneladas),Francia,FR,Niza,NCE,4.004,82.16,0.0
+T1Estacionamiento primeros 75 minutosFRNCE,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento primeros 75 minutos,Estacionamiento primeros 75 minutos,Francia,FR,Niza,NCE,0.0,0.0,0.0
+T1Seguridad_Domestico_EU_SchengenPTLIS,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad_Domestico_EU_Schengen,Seguridad vuelos domestico y EU schengen,Portugal,PT,Lisboa,LIS,1.53,0.0,0.0
+T3Handling_DeicingUKLHR,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,Reino Unido,UK,Londres Heathrow,LHR,3.328125,0.0,0.0
+T3Cuba_Aguas_ResidualesESAGP,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Malaga,AGP,38.47,0.0,0.0
+T3Cuba_Agua_PotableESSCQ,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Santiago,SCQ,38.47,0.0,0.0
+T3Handling_DeicingESBCN,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Barcelona,BCN,2.88,0.0,0.0
+T3Handling_Limpieza_EstandarESBCN,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Barcelona,BCN,30.7,0.0,0.0
+T3Handling_BasicoESMAH,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Menorca,MAH,1100.0,0.0,0.0
+T1Pasarelas_TELESESTFS,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Tenerife Sur,TFS,25.644725,0.0,0.0
+T1Pasarelas_TELESESMAH,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Menorca,MAH,24.658345,0.0,0.0
+T1Energia_400Hz_15_MinESPMI,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Palma de Mallorca,PMI,6.851524,0.0,0.0
+T1Energia_400Hz_15_MinESFUE,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Fuerteventura,FUE,6.851524,0.0,0.0
+T1Energia_400Hz_15_MinESMAH,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Menorca,MAH,6.851524,0.0,0.0
+T1EstacionamientoESTFS,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Tenerife Sur,TFS,0.116888,0.0,0.0
+T1Pasajero_EEEESFUE,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Fuerteventura,FUE,5.36,0.0,0.0
+T1Pasajero_EEEESIBZ,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Ibiza,IBZ,5.36,0.0,0.0
+T1SeguridadESACE,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Lanzarote,ACE,3.63,0.0,0.0
+T1Aerodromo_Y_TransitoESIBZ,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Ibiza,IBZ,3.045355,0.0,0.0
+T1Energía a 400Hz (3 conexiones) no UEFRCDG,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energía a 400Hz (3 conexiones) no UE,Energía a 400Hz (3 conexiones) no UE,Francia,FR,Paris Charles de Gaulle,CDG,95.22,2.0,0.0
+T1Aterrizaje con pasarela a terminal de 06:00 a 23:01NLAMS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje con pasarela a terminal de 06:00 a 23:01,Aterrizaje con pasarela a terminal de 06:00 a 23:00,Holanda,NL,Amsterdam,AMS,4.09,81.8,0.0
+T1Estacionamiento (a partir de las dos horas) temporada invierno durante la nocheITNAP,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento (a partir de las dos horas) temporada invierno durante la noche,Estacionamiento (a partir de las dos horas) temporada invierno durante la noche,Italia,IT,Napoles,NAP,0.13,0.0,0.0
+T1Pasarelas_2hPTLIS,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_2h,Pasarelas (mas de 2 horas),Portugal,PT,Lisboa,LIS,4.82,0.0,0.0
+T1Pasajero_Salida_GeneralPTLIS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Salida_General,Pasajero Salida General,Portugal,PT,Lisboa,LIS,10.88,0.0,0.0
+T3Handling_BasicoUKLHR,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",Reino Unido,UK,Londres Heathrow,LHR,923.323688,0.0,0.0
+T1Estacionamiento_UK1UKLHR,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_UK1,Estacionamiento_All_Fuselaje_UK1,Reino Unido,UK,Londres Heathrow,LHR,25.188135,0.0,0.0
+T1Estacionamiento aviones más de 200 toneladasUKLGW,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento aviones más de 200 toneladas,Estacionamiento aviones más de 200 toneladas,Reino Unido,UK,Londres Gatwick,LGW,8.32,0.0,0.0
+T1Transito_Terminal_NavigationUKLHR,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Transito_Terminal_Navigation,Transito (terminal navigation),Reino Unido,UK,Londres Heathrow,LHR,15.849363,0.0,0.0
+T1Pasajero_Transito_TransferDETXL,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Transito_Transfer,Pasajeros tránsito/transfer,Alemania,DE,Berlin Tegel Airport,TXL,9.4,0.0,0.0
+T3Cuba_Aguas_ResidualesESSVQ,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Sevilla,SVQ,38.47,0.0,0.0
+T3Handling_DeicingESOVD,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Asturias,OVD,2.88,0.0,0.0
+T1Pasarelas_TELESESSCQ,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Santiago,SCQ,24.658345,0.0,0.0
+T1Energia_400Hz_15_MinESLPA,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Gran Canaria,LPA,6.851524,0.0,0.0
+T2Fuel_SERVICE_ES1ESVGO,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Vigo,VGO,530.5,4.13,25.0
+T1AterrizajeESSVQ,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Sevilla,SVQ,5.691663,0.0,0.0
+T1Pasajero_EEEESTFN,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Tenerife Norte,TFN,5.36,0.0,0.0
+T1Pasajero_EEEESTFS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Tenerife Sur,TFS,6.3,0.0,0.0
+T1PMRESMAH,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Menorca,MAH,0.59,0.0,0.0
+T1Energia_400Hz_RegularFRNCE,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_Regular,Energia a 400Hz (uso regular),Francia,FR,Niza,NCE,7.93,0.0,0.0
+T1Aterrizaje día Group 5a (EPNdB between 16 and 20 dB)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje día Group 5a (EPNdB between 16 and 20 dB),Aterrizaje día Group 5a (EPNdB between 16 and 20 dB),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,0.85
+T1Aterrizaje noche Group 1 (EPNdB below 0 db)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje noche Group 1 (EPNdB below 0 db),Aterrizaje noche Group 1 (EPNdB below 0 db),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.95
+T1Estacionamiento con pasarelaFRCDG,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento con pasarela,Estacionamiento con pasarela,Francia,FR,Paris Charles de Gaulle,CDG,3.65,0.0,0.0
+T1Pasajero_Origen_DestinoFRCDG,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Origen_Destino,Pasajero de Salida General No Transfer,Francia,FR,Paris Charles de Gaulle,CDG,8.92,0.0,0.0
+T4Navigation_ChargesIT,Tasas de navegación,NAVIGATION,NAVIGATION,Navigation_Charges,Navigation charges,Italia,IT,ALL,-,80.07,0.0,0.0
+T1Estacionamiento_100Tn_90Min_24hPTLIS,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_100Tn_90Min_24h,Estacionamiento (aviones mas de 100 toneladas) mas de 90 mins. (primeras 24 horas),Portugal,PT,Lisboa,LIS,4.58,0.0,0.0
+T1Pasajero_INTL_TransferPTLIS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL_Transfer,Pasajeros internacional en transfer,Portugal,PT,Lisboa,LIS,15.32,0.0,0.0
+T1Pasajero_UE_NO_Schengen_TransferPTLIS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_UE_NO_Schengen_Transfer,Pasajeros UE (no schengen) en transfer,Portugal,PT,Lisboa,LIS,11.51,0.0,0.0
+T3Cuba_Aguas_ResidualesESMAH,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Menorca,MAH,38.47,0.0,0.0
+T3Cuba_Agua_PotableESSVQ,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Sevilla,SVQ,38.47,0.0,0.0
+T3Handling_DeicingESPMI,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Palma de Mallorca,PMI,2.88,0.0,0.0
+T3Handling_BasicoESFUE,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Fuerteventura,FUE,1100.0,0.0,0.0
+T2Fuel_SERVICE_ES1ESPMI,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Palma de Mallorca,PMI,542.0,4.13,25.0
+T2Fuel_SERVICE_ES1ESTFS,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Tenerife Sur,TFS,525.0,4.13,25.0
+T2Fuel_SERVICE_ES1ESFUE,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Fuerteventura,FUE,525.0,4.13,25.0
+T1EstacionamientoESSVQ,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Sevilla,SVQ,0.064949,0.0,0.0
+T1Pasajero_EEEESACE,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Lanzarote,ACE,5.48,0.0,0.0
+T1Pasajero_INTLESPMI,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Palma de Mallorca,PMI,9.48,0.0,0.0
+T1Energia a 400Hz (1 conexión) UEFRCDG,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia a 400Hz (1 conexión) UE,Energia a 400Hz (1 conexión) UE,Francia,FR,Paris Charles de Gaulle,CDG,14.68,2.0,0.0
+T1Aterrizaje de emergencia aviones más de 100tNLAMS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje de emergencia aviones más de 100t,Aterrizaje de emergencia aviones más de 100t,Holanda,NL,Amsterdam,AMS,2756.7,0.0,0.0
+T1Despegue_Pasarela_All_DayNLAMS,Tasas aeroportuarias,TAKE_OFF,TAKE OFF,Despegue_Pasarela_All_Day,Despegue con pasarela a terminal de 23:01 a 05:59,Holanda,NL,Amsterdam,AMS,4.09,81.8,1.5
+T3Handling_BasicoPTLIS,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",Portugal,PT,Lisboa,LIS,799.0,0.0,0.0
+T1Pasajero_UE_NO_SchengenPTLIS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_UE_NO_Schengen,Pasajeros UE (no schengen),Portugal,PT,Lisboa,LIS,17.53,0.0,0.0
+T1Transito_Terminal_NavigationPTLIS,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Transito_Terminal_Navigation,Transito (terminal navigation),Portugal,PT,Lisboa,LIS,134.05,0.0,0.0
+T1Aterrizaje (noche horas pico) Chapter 14 baseUKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje (noche horas pico) Chapter 14 base,Aterrizaje (noche horas pico) Chapter 14 base,Reino Unido,UK,Londres Heathrow,LHR,2955.0,0.0,0.0
+T1Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 3 minusUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 3 minus,Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 3 minus,Reino Unido,UK,Londres Gatwick,LGW,658.67,0.0,0.0
+T3Handling_BasicoDETXL,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",Alemania,DE,Berlin Tegel Airport,TXL,799.0,0.0,0.0
+T3Cuba_Aguas_ResidualesESTFN,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Tenerife Norte,TFN,38.47,0.0,0.0
+T1Energia_400Hz_15_MinESSCQ,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Santiago,SCQ,6.851524,0.0,0.0
+T1AterrizajeESMAH,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Menorca,MAH,5.691663,0.0,0.0
+T1Estacionamiento_ES2ESVGO,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_ES2,Estacionamiento,España,ES,Vigo,VGO,0.861673,0.0,0.0
+T1EstacionamientoESFUE,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Fuerteventura,FUE,0.064949,0.0,0.0
+T1PMRESAGP,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Malaga,AGP,0.59,0.0,0.0
+T1SeguridadESBCN,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Barcelona,BCN,3.63,0.0,0.0
+T1Aerodromo_Y_TransitoESSCQ,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Santiago,SCQ,3.045355,0.0,0.0
+T1Aerodromo_Y_TransitoESVGO,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Vigo,VGO,2.383779,0.0,0.0
+T1Energía a 400Hz (2 conexiones) UEFRCDG,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energía a 400Hz (2 conexiones) UE,Energía a 400Hz (2 conexiones) UE,Francia,FR,Paris Charles de Gaulle,CDG,29.36,2.0,0.0
+T1Aterrizaje_0_18FRNCE,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_0_18,Aterrizaje (peso de 0-18 toneladas),Francia,FR,Niza,NCE,0.0,54.13,0.0
+T1Estacionamiento (mas de 75 minutos) 0-18 toneladasFRNCE,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento (mas de 75 minutos) 0-18 toneladas,Estacionamiento (mas de 75 minutos) 0-18 toneladas,Francia,FR,Niza,NCE,5.72,0.0,0.0
+T1Estacionamiento_FR1FRCDG,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_FR1,Estacionamiento teniendo en cuenta si hay Pasarela y sin tener en cuenta el Cargo adicional,Francia,FR,Paris Charles de Gaulle,CDG,3.65,0.0,0.0
+T1Pasajero_Adulto_InviernoITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Adulto_Invierno,Pasajero Adulto Invierno,Italia,IT,Napoles,NAP,8.58,0.0,0.0
+T1Pasajeros (mas de 12 años) temporada verano UEITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros (mas de 12 años) temporada verano UE,Pasajeros (mas de 12 años) temporada verano UE,Italia,IT,Napoles,NAP,11.66,0.0,0.0
+T1Estacionamiento_14_100Tn_hasta_24hPTLIS,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_14_100Tn_hasta_24h,Estacionamiento (aviones de 14 a 100 toneladas) mas de 30 mins. (primeras 24h),Portugal,PT,Lisboa,LIS,1.83,0.0,0.0
+T1Aterrizaje (noche horas pico) Chapter 3UKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje (noche horas pico) Chapter 3,Aterrizaje (noche horas pico) Chapter 3,Reino Unido,UK,Londres Heathrow,LHR,20685.0,0.0,0.0
+T1Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 2UKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 2,Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 2,Reino Unido,UK,Londres Gatwick,LGW,1001.51,0.0,0.0
+T1Estacionamiento (fuselaje ancho mas de una hora y cuarto) conectado a terminalUKLHR,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento (fuselaje ancho mas de una hora y cuarto) conectado a terminal,Estacionamiento (fuselaje ancho mas de una hora y cuarto) conectado a terminal,Reino Unido,UK,Londres Heathrow,LHR,52.37,0.0,0.0
+T3Cuba_Agua_PotableESBCN,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Barcelona,BCN,9.54,0.0,0.0
+T2Fuel_SERVICE_ES1ESACE,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Lanzarote,ACE,525.0,4.13,25.0
+T1AterrizajeESPMI,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Palma de Mallorca,PMI,6.783792,0.0,0.0
+T1AterrizajeESSCQ,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Santiago,SCQ,5.691663,0.0,0.0
+T1Estacionamiento_ES2ESOVD,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_ES2,Estacionamiento,España,ES,Asturias,OVD,0.861673,0.0,0.0
+T1EstacionamientoESLPA,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Gran Canaria,LPA,0.116888,0.0,0.0
+T1EstacionamientoESMAH,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Menorca,MAH,0.064949,0.0,0.0
+T1PMRESPMI,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Palma de Mallorca,PMI,0.59,0.0,0.0
+T1PMRESFUE,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Fuerteventura,FUE,0.59,0.0,0.0
+T1SeguridadESFUE,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Fuerteventura,FUE,3.63,0.0,0.0
+T1Aerodromo_Y_TransitoESMAH,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Menorca,MAH,3.045355,0.0,0.0
+T1Energia_400Hz_RegularFRCDG,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_Regular,Energia_400Hz_1-2-3_CONEXs_UE_NO_UE,Francia,FR,Paris Charles de Gaulle,CDG,14.68,2.0,0.0
+T3Handling_DeicingFRNCE,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,Francia,FR,Niza,NCE,2.88,0.0,0.0
+T1Aterrizaje_Sin_Pasarela_All_DayNLAMS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_Sin_Pasarela_All_Day,Aterrizaje en remoto sin pasarela a terminal de 06:00 a 23:00,Holanda,NL,Amsterdam,AMS,3.27,65.24,0.0
+T1Despegue_Pasarela_23_01_05_59hNLAMS,Tasas aeroportuarias,TAKE_OFF,TAKE OFF,Despegue_Pasarela_23_01_05_59h,Despegue con pasarela a terminal de 23:01 a 05:59,Holanda,NL,Amsterdam,AMS,4.09,81.8,1.5
+T1Seguridad_EU_NO_SchengenPTLIS,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad_EU_NO_Schengen,Seguridad vuelos EU no schengen,Portugal,PT,Lisboa,LIS,3.2,0.0,0.0
+T1Aterrizaje_horas pico_Chapter14_baseUKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_horas pico_Chapter14_base,Aterrizaje (horas pico) Chapter 14 base,Reino Unido,UK,Londres Heathrow,LHR,2364.0,0.0,0.0
+T1Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 2UKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 2,Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 2,Reino Unido,UK,Londres Gatwick,LGW,1001.51,0.0,0.0
+T1PMR cat. 1 (por encima del 65% en 30 horas)UKLHR,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR cat. 1 (por encima del 65% en 30 horas),PMR cat. 1 (por encima del 65% en 30 horas),Reino Unido,UK,Londres Heathrow,LHR,0.5,0.0,0.0
+T1AterrizajeDETXL,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,Alemania,DE,Berlin Tegel Airport,TXL,2.0,80.0,0.0
+T1Pasajero_INTL_SchengenDETXL,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL_Schengen,Pasajero Internacional Schengen,Alemania,DE,Berlin Tegel Airport,TXL,12.82,0.0,0.0
+T3Handling_Limpieza_EstandarESMAH,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Menorca,MAH,82.45,0.0,0.0
+T1Pasarelas_TELESESLPA,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Gran Canaria,LPA,25.644725,0.0,0.0
+T2Fuel_SERVICE_ES1ESMAH,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Menorca,MAH,542.0,4.13,25.0
+T1PMRESBCN,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Barcelona,BCN,0.59,0.0,0.0
+T1PMRESMAD,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Madrid,MAD,0.59,0.0,0.0
+T1Aerodromo_Y_TransitoESLPA,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Gran Canaria,LPA,3.381394,0.0,0.0
+T1Estacionamiento en remoto cargo adicionalFRCDG,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento en remoto cargo adicional,Estacionmiento en remoto cargo adicional,Francia,FR,Paris Charles de Gaulle,CDG,0.066,0.0,0.0
+T1Aterrizaje_Pasarela_All_DayNLAMS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_Pasarela_All_Day,Aterrizaje con pasarela a terminal de 06:00 a 23:00,Holanda,NL,Amsterdam,AMS,4.09,81.8,0.0
+T1Aterrizaje (aviones de 75 a 150 toneladas)PTLIS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje (aviones de 75 a 150 toneladas),Aterrizaje (aviones de 75 a 150 toneladas),Portugal,PT,Lisboa,LIS,8.63,0.0,0.0
+T1Estacionamiento_14_100Tn_24_48hPTLIS,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_14_100Tn_24_48h,Estacionamiento (aviones de 14 a 100 toneladas) mas de 30 mins. (24-48 horas),Portugal,PT,Lisboa,LIS,4.58,0.0,0.0
+T4Navigation_ChargesUK,Tasas de navegación,NAVIGATION,NAVIGATION,Navigation_Charges,Navigation charges,Reino Unido,UK,ALL,-,86.265473,0.0,0.0
+T1Aterrizaje_horas pico_Chapter4_highUKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_horas pico_Chapter4_high,Aterrizaje (horas pico) Chapter 4 high,Reino Unido,UK,Londres Heathrow,LHR,1182.0,0.0,0.0
+T1PMR cat. 2 (entre 50%-64.99% en 30 horas)UKLHR,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR cat. 2 (entre 50%-64.99% en 30 horas),PMR cat. 2 (entre 50%-64.99% en 30 horas),Reino Unido,UK,Londres Heathrow,LHR,1.17,0.0,0.0
+T3Handling_BasicoESMAD,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Madrid,MAD,1225.2,0.0,0.0
+T3Handling_BasicoESAGP,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Malaga,AGP,1100.0,0.0,0.0
+T1Energia_400Hz_15_MinESMAD,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Madrid,MAD,6.851524,0.0,0.0
+T2Fuel_SERVICE_ES1ESTFN,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Tenerife Norte,TFN,525.0,4.13,25.0
+T1AterrizajeESBCN,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Barcelona,BCN,7.151334,0.0,0.0
+T1Pasajero_EEEESVGO,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Vigo,VGO,3.84,0.0,0.0
+T1Pasajero_EEEESMAH,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Menorca,MAH,5.36,0.0,0.0
+T1PMRESLPA,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Gran Canaria,LPA,0.59,0.0,0.0
+T1PMRESIBZ,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Ibiza,IBZ,0.59,0.0,0.0
+T1SeguridadESTFS,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Tenerife Sur,TFS,3.63,0.0,0.0
+T2Fuel_SERVICEFRNCE,Fuel expenses,FUEL,FUEL,Fuel_SERVICE,Fuel service,Francia,FR,Niza,NCE,589.0,0.0,0.0
+T3Handling_BasicoFRNCE,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",Francia,FR,Niza,NCE,799.0,0.0,0.0
+T1Pasajero doméstico en transferFRCDG,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero doméstico en transfer,Pasajero doméstico en transfer,Francia,FR,Paris Charles de Gaulle,CDG,5.35,0.0,0.0
+T3Handling_DeicingNLAMS,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,Holanda,NL,Amsterdam,AMS,2.88,0.0,0.0
+T1Pasajeros (mas de 12 años) temporada de invierno UEITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros (mas de 12 años) temporada de invierno UE,Pasajeros (mas de 12 años) temporada de invierno UE,Italia,IT,Napoles,NAP,8.58,0.0,0.0
+T1Seguridad_EquipajeITNAP,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad_Equipaje,Seguridad equipajes,Italia,IT,Napoles,NAP,1.69,0.0,0.0
+T1Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 3 baseUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 3 base,Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 3 base,Reino Unido,UK,Londres Gatwick,LGW,240.21,0.0,0.0
+T1Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 3 highUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 3 high,Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 3 high,Reino Unido,UK,Londres Gatwick,LGW,500.76,0.0,0.0
+T1Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 4UKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 4,Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 4,Reino Unido,UK,Londres Gatwick,LGW,204.19,0.0,0.0
+T1Pasajeros_PasarelaUKLGW,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros_Pasarela,Pasajeros (aviones conectados a terminal),Reino Unido,UK,Londres Gatwick,LGW,14.371782,0.0,0.0
+T1PMR cat. 3 (menos del 50% en 30 horas)UKLHR,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR cat. 3 (menos del 50% en 30 horas),PMR cat. 3 (menos del 50% en 30 horas),Reino Unido,UK,Londres Heathrow,LHR,2.4,0.0,0.0
+T3Handling_DeicingESLPA,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Gran Canaria,LPA,2.88,0.0,0.0
+T3Handling_BasicoESTFS,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Tenerife Sur,TFS,1100.0,0.0,0.0
+T1Pasarelas_TELESESMAD,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Madrid,MAD,32.16294,0.0,0.0
+T1Pasarelas_TELESESOVD,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Asturias,OVD,24.658345,0.0,0.0
+T1EstacionamientoESTFN,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento,Estacionamiento,España,ES,Tenerife Norte,TFN,0.064949,0.0,0.0
+T1Pasajero_INTLESOVD,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Asturias,OVD,5.77,0.0,0.0
+T1PMRESTFS,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Tenerife Sur,TFS,0.59,0.0,0.0
+T3Cuba_Aguas_ResidualesFRNCE,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,Francia,FR,Niza,NCE,35.0,0.0,0.0
+T1Pasajero_Infantil_VeranoITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Infantil_Verano,Pasajero Infantil Vernao,Italia,IT,Napoles,NAP,5.83,0.0,0.0
+T1Aterrizaje_horas pico_Chapter14_lowUKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_horas pico_Chapter14_low,Aterrizaje (horas pico) Chapter 14 low,Reino Unido,UK,Londres Heathrow,LHR,8274.0,0.0,0.0
+T1Pasajero regional (de la UE con dual discount) en transferUKLHR,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero regional (de la UE con dual discount) en transfer,Pasajero regional (de la UE con dual discount) en transfer,Reino Unido,UK,Londres Heathrow,LHR,14.35,0.0,0.0
+T4Navigation_ChargesDE,Tasas de navegación,NAVIGATION,NAVIGATION,Navigation_Charges,Navigation charges,Alemania,DE,ALL,-,69.43,0.0,0.0
+T1SeguridadDETXL,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,Alemania,DE,Berlin Tegel Airport,TXL,0.63,0.0,0.0
+T3Cuba_Agua_PotableESMAH,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Menorca,MAH,38.47,0.0,0.0
+T3Handling_Limpieza_EstandarESSVQ,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Sevilla,SVQ,82.45,0.0,0.0
+T4Navigation_ChargesES,Tasas de navegación,NAVIGATION,NAVIGATION,Navigation_Charges,Navigation charges,España,ES,NON_CANARY,-,71.76,0.0,0.0
+T2Fuel_SERVICE_ES1ESIBZ,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Ibiza,IBZ,542.0,4.13,25.0
+T1Pasajero_EEEESBCN,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Barcelona,BCN,14.11,0.0,0.0
+T1SeguridadESMAD,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Madrid,MAD,3.63,0.0,0.0
+T1SeguridadESIBZ,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Ibiza,IBZ,3.63,0.0,0.0
+T4Navigation_ChargesFR,Tasas de navegación,NAVIGATION,NAVIGATION,Navigation_Charges,Navigation charges,Francia,FR,ALL,-,67.07,0.0,0.0
+T2Fuel_SERVICEFRCDG,Fuel expenses,FUEL,FUEL,Fuel_SERVICE,Fuel service,Francia,FR,Paris Charles de Gaulle,CDG,621.0,0.0,0.0
+T3Cuba_Agua_PotableFRCDG,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,Francia,FR,Paris Charles de Gaulle,CDG,35.0,0.0,0.0
+T1Estacionamiento con pasarela cargo adicionalFRCDG,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento con pasarela cargo adicional,Estacionamiento con pasarela cargo adicional,Francia,FR,Paris Charles de Gaulle,CDG,0.063,0.0,0.0
+T1Pasajero europeo/no schengenFRNCE,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero europeo/no schengen,Pasajero europeo/no schengen,Francia,FR,Niza,NCE,10.13,0.0,0.0
+T1Pasajero_TransferFRCDG,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Transfer,Pasajero de Salida General Transfer,Francia,FR,Paris Charles de Gaulle,CDG,5.35,0.0,0.0
+T1Pasajero_Salida_GeneralFRNCE,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Salida_General,Pasajero de Salida General,Francia,FR,Niza,NCE,7.31,0.0,0.0
+T1PMRNLAMS,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,Holanda,NL,Amsterdam,AMS,0.46,0.0,0.0
+T1Pasajeros (niños de 2 a 12 años) temporada de invierno UEITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros (niños de 2 a 12 años) temporada de invierno UE,Pasajeros (niños de 2 a 12 años) temporada de invierno UE,Italia,IT,Napoles,NAP,4.29,0.0,0.0
+T1Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 4UKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 4,Aterrizaje invierno de las 22:30 a las 04:59 clasificación acustica chapter 4,Reino Unido,UK,Londres Gatwick,LGW,204.19,0.0,0.0
+T1Pasajero regional (de la UE con dual discount) origen/destinoUKLHR,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero regional (de la UE con dual discount) origen/destino,Pasajero regional (de la UE con dual discount) origen/destino,Reino Unido,UK,Londres Heathrow,LHR,19.13,0.0,0.0
+T3Cuba_Agua_PotableESMAD,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Madrid,MAD,9.54,0.0,0.0
+T3Handling_DeicingESMAH,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Menorca,MAH,2.88,0.0,0.0
+T1Energia_400Hz_15_MinESIBZ,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Ibiza,IBZ,6.851524,0.0,0.0
+T2Fuel_SERVICE_ES1ESAGP,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Malaga,AGP,530.5,4.13,25.0
+T1Pasajero_INTLESMAD,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Madrid,MAD,21.46,0.0,0.0
+T1SeguridadESMAH,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Menorca,MAH,3.63,0.0,0.0
+T1Pasajero_Origen_DestinoNLAMS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Origen_Destino,Pasajeros Origen/Destino,Holanda,NL,Amsterdam,AMS,12.44,0.0,0.0
+T1Despegue_Sin_Pasarela_All_DayNLAMS,Tasas aeroportuarias,TAKE_OFF,TAKE OFF,Despegue_Sin_Pasarela_All_Day,Despegue en remoto sin pasarela a terminal de 23:01 a 05:59,Holanda,NL,Amsterdam,AMS,3.27,65.24,1.5
+T1Aterrizaje_25ITNAP,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_25,Aterrizaje (de mas de 25 toneladas),Italia,IT,Napoles,NAP,3.07,0.0,0.0
+T1Estacionamiento_2h_Verano_GeneralITNAP,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_2h_Verano_General,Estacionamiento (a partir de las dos horas) temporada verano dia/noche,Italia,IT,Napoles,NAP,0.28,0.0,0.0
+T1Aterrizaje_horas pico_Chapter3UKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_horas pico_Chapter3,Aterrizaje (horas pico) Chapter 3,Reino Unido,UK,Londres Heathrow,LHR,709.2,0.0,0.0
+T1Estacionamiento_Pasarela40_90DETXL,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_Pasarela40_90,Estacionamiento con pasarela (40-90 min),Alemania,DE,Berlin Tegel Airport,TXL,0.68,0.0,0.0
+T3Cuba_Aguas_ResidualesDETXL,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,Alemania,DE,Berlin Tegel Airport,TXL,35.0,0.0,0.0
+T3Cuba_Agua_PotableESTFN,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Tenerife Norte,TFN,38.47,0.0,0.0
+T3Cuba_Agua_PotableESIBZ,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Ibiza,IBZ,38.47,0.0,0.0
+T3Handling_DeicingESTFS,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Tenerife Sur,TFS,2.88,0.0,0.0
+T3Handling_BasicoESLPA,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Gran Canaria,LPA,1100.0,0.0,0.0
+T1AterrizajeESTFS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Tenerife Sur,TFS,6.783792,0.0,0.0
+T1Pasajero_INTLESVGO,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Vigo,VGO,5.77,0.0,0.0
+T1PMRESOVD,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Asturias,OVD,0.59,0.0,0.0
+T1SeguridadESOVD,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Asturias,OVD,3.63,0.0,0.0
+T1Aerodromo_Y_TransitoESMAD,Tasas aeroportuarias,TERMINAL_NAVIGATION,TERMINAL NAVIGATION,Aerodromo_Y_Transito,Aeródromo y tránsito,España,ES,Madrid,MAD,3.402397,0.0,0.0
+T1Pasarela_TELES_SimpleFRNCE,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarela_TELES_Simple,Pasarela telescopica simple,Francia,FR,Niza,NCE,39.24,0.0,0.0
+T1Energía a 400Hz (3 conexiones) UEFRCDG,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energía a 400Hz (3 conexiones) UE,Energía a 400Hz (3 conexiones) UE,Francia,FR,Paris Charles de Gaulle,CDG,63.48,2.0,0.0
+T1Aterrizaje noche Group 5a (EPNdB between 16 and 20 dB)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje noche Group 5a (EPNdB between 16 and 20 dB),Aterrizaje noche Group 5a (EPNdB between 16 and 20 dB),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.275
+T1Pasajero de salida UE Schengen en transferFRCDG,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero de salida UE Schengen en transfer,Pasajero de salida UE Schengen en transfer,Francia,FR,Paris Charles de Gaulle,CDG,5.35,0.0,0.0
+T1Aterrizaje de emergencia aviones entre 0-100tNLAMS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje de emergencia aviones entre 0-100t,Aterrizaje de emergencia aviones entre 0-100t,Holanda,NL,Amsterdam,AMS,1837.8,0.0,0.0
+T3Handling_BasicoITNAP,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",Italia,IT,Napoles,NAP,799.0,0.0,0.0
+T1Aterrizaje_0_25ITNAP,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_0_25,Aterrizaje (de 0 a 25 toneladas),Italia,IT,Napoles,NAP,2.23,0.0,0.0
+T1Pasajero_Infantil_InviernoITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Infantil_Invierno,Pasajero Infantil Invierno,Italia,IT,Napoles,NAP,4.29,0.0,0.0
+T1Aterrizaje (noche horas pico) Chapter 4 highUKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje (noche horas pico) Chapter 4 high,Aterrizaje (noche horas pico) Chapter 4 high,Reino Unido,UK,Londres Heathrow,LHR,5910.0,0.0,0.0
+T1Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 4UKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 4,Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 4,Reino Unido,UK,Londres Gatwick,LGW,622.08,0.0,0.0
+T1Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 4UKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 4,Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 4,Reino Unido,UK,Londres Gatwick,LGW,622.08,0.0,0.0
+T1Estacionamiento (fuselaje estrecho primera hora y cuarto) conectado a terminalUKLHR,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento (fuselaje estrecho primera hora y cuarto) conectado a terminal,Estacionamiento (fuselaje estrecho primera hora y cuarto) conectado a terminal,Reino Unido,UK,Londres Heathrow,LHR,0.0,0.0,0.0
+T3Cuba_Aguas_ResidualesESBCN,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,España,ES,Barcelona,BCN,10.24,0.0,0.0
+T3Handling_Limpieza_EstandarESFUE,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Fuerteventura,FUE,82.45,0.0,0.0
+T1AterrizajeESLPA,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje,Aterrizaje,España,ES,Gran Canaria,LPA,6.783792,0.0,0.0
+T1Pasajero_EEEESSCQ,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_EEE,Pasajero EEE,España,ES,Santiago,SCQ,5.36,0.0,0.0
+T1Pasajero_INTLESTFS,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Tenerife Sur,TFS,9.48,0.0,0.0
+T1PMRESSVQ,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,España,ES,Sevilla,SVQ,0.59,0.0,0.0
+T1SeguridadESSCQ,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Santiago,SCQ,3.63,0.0,0.0
+T1Aterrizaje_25_75FRNCE,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_25_75,Aterrizaje (peso de 25-75 toneladas),Francia,FR,Niza,NCE,4.885,326.41,0.0
+T1Pasajero de salida UE no SchengenFRCDG,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero de salida UE no Schengen,Pasajero de salida UE no Schengen,Francia,FR,Paris Charles de Gaulle,CDG,9.82,0.0,0.0
+T1Estacionamiento_6h_15minNLAMS,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_6h_15min,Estacionamiento a partir de las seis horas y cuarto,Holanda,NL,Amsterdam,AMS,1.43,0.0,0.0
+T1Aterrizaje (aviones de 0 a 25 toneladas)PTLIS,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje (aviones de 0 a 25 toneladas),Aterrizaje (aviones de 0 a 25 toneladas),Portugal,PT,Lisboa,LIS,6.17,0.0,0.0
+T3Cuba_Agua_PotableUKLGW,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,Reino Unido,UK,Londres Gatwick,LGW,40.445969,0.0,0.0
+T1Pasajero internacional (en transfer)UKLHR,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero internacional (en transfer),Pasajero internacional (en transfer),Reino Unido,UK,Londres Heathrow,LHR,30.68,0.0,0.0
+T1Pasajeros (checkin) tasa por el uso de las maquinas ATMUKLGW,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros (checkin) tasa por el uso de las maquinas ATM,Pasajeros (checkin) tasa por el uso de las maquinas ATM,Reino Unido,UK,Londres Gatwick,LGW,0.102,0.0,0.0
+T1PMR con aviso previo > de 14 diasUKLGW,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR con aviso previo > de 14 dias,PMR con aviso previo > de 14 dias,Reino Unido,UK,Londres Gatwick,LGW,0.165,0.0,0.0
+T1Pasajero_DomesticoDETXL,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Domestico,Pasajero Domestico,Alemania,DE,Berlin Tegel Airport,TXL,12.82,0.0,0.0
+T3Handling_DeicingESSCQ,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Santiago,SCQ,2.88,0.0,0.0
+T3Handling_Limpieza_EstandarESTFN,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Tenerife Norte,TFN,82.45,0.0,0.0
+T3Handling_Limpieza_EstandarESTFS,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Tenerife Sur,TFS,82.45,0.0,0.0
+T3Handling_Limpieza_EstandarESIBZ,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Ibiza,IBZ,82.45,0.0,0.0
+T3Handling_BasicoESBCN,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Barcelona,BCN,1225.2,0.0,0.0
+T2Fuel_SERVICE_ES1ESSCQ,Fuel expenses,FUEL,FUEL,Fuel_SERVICE_ES1,Fuel service,España,ES,Santiago,SCQ,530.5,4.13,25.0
+T1SeguridadESTFN,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Tenerife Norte,TFN,3.63,0.0,0.0
+T3Handling_DeicingFRCDG,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,Francia,FR,Paris Charles de Gaulle,CDG,2.88,0.0,0.0
+T1Aterrizaje dia Group 1 (EPNdB below 0 db)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje dia Group 1 (EPNdB below 0 db),Aterrizaje dia Group 1 (EPNdB below 0 db),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.3
+T1Aterrizaje_75FRNCE,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_75,Aterrizaje (peso de mas de 75 toneladas),Francia,FR,Niza,NCE,7.788,326.41,0.0
+T1PMRFRCDG,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,Francia,FR,Paris Charles de Gaulle,CDG,0.7,0.0,0.0
+T1PMRFRNCE,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,Francia,FR,Niza,NCE,0.85,0.0,0.0
+T1Estacionamiento_hasta_6h_15minNLAMS,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_hasta_6h_15min,Estacionamiento hasta las seis horas y cuarto,Holanda,NL,Amsterdam,AMS,0.0,0.0,0.0
+T1Estacionamiento_100Tn_48hPTLIS,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_100Tn_48h,Estacionamiento (aviones mas de 100 toneladas) mas de 90 mins. (mas de 48 horas),Portugal,PT,Lisboa,LIS,7.54,0.0,0.0
+T1Estacionamiento_14_100Tn_48hPTLIS,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_14_100Tn_48h,Estacionamiento (aviones de 14 a 100 toneladas) mas de 30 mins. (mas de 48 horas),Portugal,PT,Lisboa,LIS,7.54,0.0,0.0
+T1PMRPTLIS,Tasas aeroportuarias,PASSENGER_REDUCED_MOBILITY,PASSENGER REDUCED MOBILITY,PMR,PMR,Portugal,PT,Lisboa,LIS,0.4,0.0,0.0
+T1Aterrizaje_All_Day_UK1UKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_All_Day_UK1,Aterrizaje_AllDay - Heathrow,Reino Unido,UK,Londres Heathrow,LHR,2728.90704,0.0,0.0
+T1Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 3 minusUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 3 minus,Aterrizaje verano de las 05:00 a las 18:59 clasificación acustica chapter 3 minus,Reino Unido,UK,Londres Gatwick,LGW,658.67,0.0,0.0
+T1Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 3 highUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 3 high,Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 3 high,Reino Unido,UK,Londres Gatwick,LGW,1525.66,0.0,0.0
+T1Estacionamiento_Pasarela90_120DETXL,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_Pasarela90_120,Estacionamiento con pasarela (90-120 min),Alemania,DE,Berlin Tegel Airport,TXL,0.74,0.0,0.0
+T1Estacionamiento_Remoto90_120DETXL,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_Remoto90_120,Estacionamiento en remoto (90-120 min),Alemania,DE,Berlin Tegel Airport,TXL,0.28,0.0,0.0
+T1Pasajero_INTLESSVQ,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Sevilla,SVQ,8.05,0.0,0.0
+T1Pasajero de salida en transfer InternacionalFRCDG,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero de salida en transfer Internacional,Pasajero de salida en transfer Internacional,Francia,FR,Paris Charles de Gaulle,CDG,13.56,0.0,0.0
+T1Pasajeros (niños de 2 a 12 años) temporada de invierno no UEITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros (niños de 2 a 12 años) temporada de invierno no UE,Pasajeros (niños de 2 a 12 años) temporada de invierno no UE,Italia,IT,Napoles,NAP,6.38,0.0,0.0
+T2Fuel_SERVICEUKLHR,Fuel expenses,FUEL,FUEL,Fuel_SERVICE,Fuel service,Reino Unido,UK,Londres Heathrow,LHR,870.38744,0.0,0.0
+T1Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 2UKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 2,Aterrizaje verano de las 22:30 a las 04:59 clasificación acustica chapter 2,Reino Unido,UK,Londres Gatwick,LGW,3051.32,0.0,0.0
+T1Pasajero_TransferUKLHR,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_Transfer,Pasajero regional (de la UE con single discount) en transfer,Reino Unido,UK,Londres Heathrow,LHR,20.893916,0.0,0.0
+T1Estacionamiento_Remoto40_90DETXL,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_Remoto40_90,Estacionamiento en remoto (40-90 min),Alemania,DE,Berlin Tegel Airport,TXL,0.22,0.0,0.0
+T1Pasajero_INTL_NO_SchengenDETXL,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL_NO_Schengen,Pasajero Internacional no Schengen,Alemania,DE,Berlin Tegel Airport,TXL,14.1,0.0,0.0
+T3Cuba_Agua_PotableESOVD,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Asturias,OVD,38.47,0.0,0.0
+T3Cuba_Agua_PotableESTFS,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,España,ES,Tenerife Sur,TFS,38.47,0.0,0.0
+T3Handling_DeicingESVGO,Tasas de handling,HANDLING,DEICING,Handling_Deicing,Deicing,España,ES,Vigo,VGO,2.88,0.0,0.0
+T3Handling_Limpieza_EstandarESMAD,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Madrid,MAD,30.7,0.0,0.0
+T3Handling_Limpieza_EstandarESPMI,Tasas de handling,HANDLING,LIMPIEZA ESTANDAR,Handling_Limpieza_Estandar,Limpieza Estandar,España,ES,Palma de Mallorca,PMI,82.45,0.0,0.0
+T3Handling_BasicoESPMI,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Palma de Mallorca,PMI,1100.0,0.0,0.0
+T3Handling_BasicoESSVQ,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Sevilla,SVQ,1100.0,0.0,0.0
+T3Handling_BasicoESVGO,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Vigo,VGO,1100.0,0.0,0.0
+T3Handling_BasicoESTFN,Tasas de handling,HANDLING,HANDLING BASICO,Handling_Basico,"Gestión Pasaje, Rampa, Jardineras & GPU",España,ES,Tenerife Norte,TFN,1100.0,0.0,0.0
+T1Pasarelas_TELESESTFN,Tasas aeroportuarias,AIRBRIDGE,AIRBRIDGE,Pasarelas_TELES,Pasarelas telescópicas,España,ES,Tenerife Norte,TFN,24.658345,0.0,0.0
+T1Energia_400Hz_15_MinESOVD,Tasas aeroportuarias,ENERGY_SUPPLY,ENERGY SUPPLY,Energia_400Hz_15_Min,Energia a 400Hz,España,ES,Asturias,OVD,6.851524,0.0,0.0
+T1Pasajero_INTLESTFN,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajero_INTL,Pasajero Internacional,España,ES,Tenerife Norte,TFN,8.05,0.0,0.0
+T1SeguridadESLPA,Tasas aeroportuarias,SECURITY,SECURITY,Seguridad,Seguridad,España,ES,Gran Canaria,LPA,3.63,0.0,0.0
+T1Aterrizaje día Group 4 (EPNdB between 8 and 13 dB)FRCDG,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje día Group 4 (EPNdB between 8 and 13 dB),Aterrizaje día Group 4 (EPNdB between 8 and 13 dB),Francia,FR,Paris Charles de Gaulle,CDG,3.932,281.96,1.0
+T1Despegue_Sin_Pasarela_23_01_05_59hNLAMS,Tasas aeroportuarias,TAKE_OFF,TAKE OFF,Despegue_Sin_Pasarela_23_01_05_59h,Despegue en remoto sin pasarela a terminal de 23:01 a 05:59,Holanda,NL,Amsterdam,AMS,3.27,65.24,1.5
+T1Pasajeros (mas de 12 años) temporada de invierno no UEITNAP,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros (mas de 12 años) temporada de invierno no UE,Pasajeros (mas de 12 años) temporada de invierno no UE,Italia,IT,Napoles,NAP,12.76,0.0,0.0
+T1Estacionamiento_100Tn_0_90MinPTLIS,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_100Tn_0_90Min,Estacionamiento (aviones mas de 100 toneladas) primeros 90 minutos,Portugal,PT,Lisboa,LIS,1.83,0.0,0.0
+T3Cuba_Agua_PotableUKLHR,Tasas de handling,HANDLING,CUBA AGUA POTABLE,Cuba_Agua_Potable,Cuba agua potable,Reino Unido,UK,Londres Heathrow,LHR,40.445969,0.0,0.0
+T3Cuba_Aguas_ResidualesUKLGW,Tasas de handling,HANDLING,CUBA AGUAS RESIDUALES,Cuba_Aguas_Residuales,Cuba aguas residuales,Reino Unido,UK,Londres Gatwick,LGW,40.445969,0.0,0.0
+T1Aterrizaje_horas pico_Chapter14_highUKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_horas pico_Chapter14_high,Aterrizaje (horas pico) Chapter 14 high,Reino Unido,UK,Londres Heathrow,LHR,2127.6,0.0,0.0
+T1Aterrizaje_horas pico_Chapter4_baseUKLHR,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje_horas pico_Chapter4_base,Aterrizaje (horas pico) Chapter 4 base,Reino Unido,UK,Londres Heathrow,LHR,1654.8,0.0,0.0
+T1Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 3 minusUKLGW,Tasas aeroportuarias,LANDING,LANDING,Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 3 minus,Aterrizaje verano de las 19:00 a las 22:59 clasificación acustica chapter 3 minus,Reino Unido,UK,Londres Gatwick,LGW,216.21,0.0,0.0
+T1Estacionamiento_5_200_TnUKLGW,Tasas aeroportuarias,PARKING,PARKING,Estacionamiento_5_200_Tn,Estacionamiento aviones de 5 a 200 toneladas,Reino Unido,UK,Londres Gatwick,LGW,4.802138,0.0,0.0
+T1Pasajeros_FacilitiesUKLGW,Tasas aeroportuarias,PASSENGER,PASSENGER,Pasajeros_Facilities,Pasajeros (checkin) tasa por uso de facilidades ,Reino Unido,UK,Londres Gatwick,LGW,0.263194,0.0,0.0
+T4Navigation_ChargesBE,Tasas de navegación,NAVIGATION,NAVIGATION,Navigation_Charges,Navigation charges,Belgica & Luxemburgo,BE,ALL,-,67.53,0.0,0.0
