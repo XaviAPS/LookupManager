@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render
-from django.template import RequestContext
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from csv_app.models import Document
 from csv_app.forms import DocumentForm
-from django.views.generic.edit import CreateView, UpdateView, DeleteView
+
 
 def list(request):
     # Handle file upload
@@ -42,12 +41,16 @@ def remove_document(request):
 
     if request.method == 'POST':
         form = DocumentForm()
-        document = request.POST.objects.get(docfile = )
+        document = request.POST.objects.get(docfile = ?????)
         document.delete()
-
-    documents = Document.objects.all()
-
-        return render(
+        
+        db_documents = Document.objects.all()
+        
+        for db_doc in db_documents:
+            if db_doc = document:
+                document.delete()
+        
+    return render(
             request,
             'list.html',
             {'documents': documents, 'form': form}
