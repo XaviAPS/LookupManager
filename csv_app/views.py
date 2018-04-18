@@ -11,12 +11,18 @@ def list(request):
     # Handle file upload
     if request.method == 'POST':
         form = DocumentForm(request.POST, request.FILES)
+        all_docs = Document.objects.all()
+        repeated = False
         if form.is_valid():
-            newdoc = Document(docfile=request.FILES['docfile'])
-            newdoc.save()
+            for doc in all_docs:
+                if Document(docfile=request.FILES['docfile']).docfile == doc.docfile:
+                    repeated = True
+            if not repeated:
+                newdoc = Document(docfile=request.FILES['docfile'])
+                newdoc.save()
 
-            # Redirect to the document list after POST
-            return HttpResponseRedirect(reverse('list'))
+                # Redirect to the document list after POST
+                return HttpResponseRedirect(reverse('list'))
     else:
         form = DocumentForm()  # A empty, unbound form
 
@@ -31,4 +37,28 @@ def list(request):
     )
 
 
+"""
+def remove_document(request):
 
+    if request.method == 'POST':
+        form = DocumentForm()
+        document = request.POST.objects.get(docfile = )
+        document.delete()
+
+    documents = Document.objects.all()
+
+        return render(
+            request,
+            'list.html',
+            {'documents': documents, 'form': form}
+        )
+
+        inventory = Inventory.objects.all()
+        item_id = int(request.POST.get('item_id'))
+        item = Inventory.objects.get(id=item_id)
+        item.delete()
+        return render_to_response('inventory.html', {
+            'form':form, 'inventory':inventory,
+            }, RequestContext(request))
+
+"""

@@ -5,7 +5,6 @@ To Do:
     Max priority:
         Delete
         Edit files online
-        Check if files are already uploaded
         Replace CSVs
 
 
@@ -24,3 +23,4 @@ Done:
     Upload
     Download
     Login
+    Check if files are already uploaded
