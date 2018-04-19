@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document List</title>
+</head>
+<body>
+
+<ul>
+{% if all_documents %}
+    {% for document in all_documents %}
+        <li><a href="/document/{{ document.id }}">{{ document.title }}</a></li>
+    {% endfor %}
+{% else %}
+    <b>There are no documents to show</b>
+{% endif %}
+</ul>
+
+
+<form action="{% url "list" %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p>{{ form.non_field_errors }}</p>
+
+            <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+
+            <p>
+                {{ form.docfile.errors }}
+                {{ form.docfile }}
+            </p>
+
+            <p><input type="submit" value="Upload"/></p>
+        </form>
+
+
+
+</body>
+</html>

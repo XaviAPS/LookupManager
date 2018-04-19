@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 from django.conf.urls import url
-from csv_app.views import list
+from csv_app.views import list, index, detail
+
 
 urlpatterns = [
-    url(r'^list/$', list, name='list')
+    #/documents
+    url(r'^$', list, name='list'),
+    #/documents/<doc_slug>
+    url(r'^(?P<document_slug>[-\w\d]+)$', detail, name='detail'),
 ]

@@ -1,13 +1,16 @@
-from django.db import models
-
 # Create your models here.
 # -*- coding: utf-8 -*-
-from django.db import models
+
 import datetime
+import os
+
+from django.db import models
+from django.utils import timezone
 
 class Document(models.Model):
     docfile = models.FileField()
-   #name = models.CharField(max_length=15, default = 'def')
-   #last_update = models.DateField(default=datetime.datetime.now())
-   #state = models.CharField(max_length=30, default = 'OK')
+    title = models.CharField(max_length=20)
+    last_update = models.DateField(default=timezone.now)
+    state = models.CharField(max_length=30, default = 'OK')
+    slug = models.SlugField(allow_unicode=True,max_length=25, null=True)
 
