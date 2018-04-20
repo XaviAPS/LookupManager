@@ -5,8 +5,8 @@ from django.urls import reverse
 from csv_app.models import Document
 from csv_app.forms import DocumentForm
 from django.template import loader
-
-
+import csv
+import re
 
 def index(request):
     all_documents = Document.objects.all()
@@ -18,12 +18,24 @@ def index(request):
     return render(request, 'documents/index.html', context)
 
 
-#If an object from the list is pressed
+# If an object from the list is pressed
 def detail(request, document_slug):
     try:
         document = Document.objects.get(slug = document_slug)
+        with open('./media/'+document.docfile.name,'rt', encoding='utf8') as csvfile:
+            print(document.docfile)
+            spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+            for row in spamreader:
+                for ra in row:
+                    lol = ra.split(',')
+                    print(lol)
+
+
+
     except Document.DoesNotExist:
         raise Http404("Document does not exist")
+
+
     return render(request, 'documents/detail.html', {'document': document})
 # https://www.youtube.com/watch?v=mWofrhTwGWQ&list=PL6gx4Cwl9DGBlmzzFcLgDhKTTfNLfX1IK&index=12
 
