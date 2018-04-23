@@ -2,12 +2,11 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
-from csv_app.models import Document
 from csv_app.forms import DocumentForm
 from django.template import loader
-
-
-
+import csv
+import codecs
+from csv_app.models import *
 def index(request):
     all_documents = Document.objects.all()
     template = loader.get_template('documents/index.html')
@@ -56,11 +55,24 @@ def list(request):
                     newdoc.slug = newdoc.title.replace(' ', '-')
                 else:
                     newdoc.slug = newdoc.title
-
                 newdoc.save()
+
+                # Adding the CSV into the DB
+                if not db_table_exists(newdoc.title):
+                    #If it does not exist, we create a
+                    with open("./media/"+newdoc.docfile.name, "r") as csvfile:
+                        csv_reader = csv.reader(csvfile)
+                        header_list = []
+                        header_list.append(csv_reader)
+                        print("reached")
+                        attrs = {title:models.CharField(max_length=35) for title in header_list}
+                        new_model = type(newdoc.title, (models.Model,),attrs)
+                        new_model.save()
+
 
                 # Redirect to the document list after POST
                 return HttpResponseRedirect(reverse('list'))
+
     else:
         form = DocumentForm()  # A empty, unbound form
 
@@ -73,3 +85,25 @@ def list(request):
         'documents/list.html',
         {'documents': documents, 'form': form}
     )
+
+def show_view(request):
+    if request.POST and request.FILES:
+        csvfile = request.FILES['csv_file']
+        dialect = csv.Sniffer().sniff(codecs.EncodedFile(csvfile, "utf-8").read(1024))
+        csvfile.open()
+        reader = csv.reader(codecs.EncodedFile(csvfile, "utf-8"), delimiter=',', dialect=dialect)
+
+    return render(request, "documents/csv_read.html", locals())
+
+def db_table_exists(table, cursor=None):
+    try:
+        if not cursor:
+            from django.db import connection
+            cursor = connection.cursor()
+        if not cursor:
+            raise Exception
+        table_names = connection.introspection.get_table_list(cursor)
+    except:
+        raise Exception("unable to determine if the table '%s' exists" % table)
+    else:
+        return table in table_names
