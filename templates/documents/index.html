@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>Document List</title>
 </head>
 <body>
 
-<ul>
-{% if all_documents %}
-    {% for document in all_documents %}
-        <li><a href="/document/{{ document.id }}">{{ document.title }}</a></li>
-    {% endfor %}
-{% else %}
-    <b>There are no documents to show</b>
-{% endif %}
-</ul>
+<div>
+
+    <ul>
+    {% if all_documents %}
+        {% for document in all_documents %}
+            <li><a href="/document/{{ document.id }}">{{ document.title }}</a></li>
+        {% endfor %}
+    {% else %}
+        <b>There are no documents to show</b>
+    {% endif %}
+    </ul>
+
+</div>
+
 
 
 <form action="{% url "list" %}" method="post" enctype="multipart/form-data">
