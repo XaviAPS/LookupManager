@@ -7,6 +7,10 @@ from django.template import loader
 import csv
 import codecs
 from csv_app.models import *
+import sqlite3
+
+# Introduces the keywords for the DB confusion
+
 def index(request):
     all_documents = Document.objects.all()
     template = loader.get_template('documents/index.html')
@@ -24,7 +28,7 @@ def detail(request, document_slug):
     except Document.DoesNotExist:
         raise Http404("Document does not exist")
     return render(request, 'documents/detail.html', {'document': document})
-# https://www.youtube.com/watch?v=mWofrhTwGWQ&list=PL6gx4Cwl9DGBlmzzFcLgDhKTTfNLfX1IK&index=12
+
 
 
 def list(request):
@@ -58,18 +62,41 @@ def list(request):
                 newdoc.save()
 
                 # Adding the CSV into the DB
+                header = []
                 if not db_table_exists(newdoc.title):
                     #If it does not exist, we create a
                     with open("./media/"+newdoc.docfile.name, "r") as csvfile:
-                        csv_reader = csv.reader(csvfile)
-                        header_list = []
-                        header_list.append(csv_reader)
-                        print("reached")
-                        attrs = {title:models.CharField(max_length=35) for title in header_list}
-                        new_model = type(newdoc.title, (models.Model,),attrs)
-                        new_model.save()
+                        reader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+                        headers_db = ''
+                        db_connection = sqlite3.connect('./mydatabase')
+                        db_cursor = db_connection.cursor()
+                        for i, csv_line in enumerate(reader):
+                            if i==0:
+                                header=csv_line[0].split(',')
+                                for head in header:
+                                    if head == header[-1]:
+                                        head = "`" + head + "`"
+                                        head +=' text'
+                                    else:
+                                        head = "`" + head + "`"
+                                        head+=' text, '
+                                    headers_db+=head
+                                db_cursor.execute('CREATE TABLE ' + newdoc.title + '\n' + '(' + headers_db + ')')
+                            else:
+                                rows_db = ''
+                                row = csv_line[0].split(',')
+                                for j, element in enumerate(row):
+                                    if j == len(row)-1:
+                                        element = "'" + element + "'"
+                                    else:
+                                        element = "'" + element + "', "
+                                    print('element: '+element)
+                                    rows_db += element
+                                    print('rows_db: '+rows_db)
+                                db_cursor.execute('INSERT INTO ' + newdoc.title + ' VALUES (' + rows_db + ")")
 
-
+                        db_connection.commit()
+                        db_connection.close()
                 # Redirect to the document list after POST
                 return HttpResponseRedirect(reverse('list'))
 
@@ -107,3 +134,4 @@ def db_table_exists(table, cursor=None):
         raise Exception("unable to determine if the table '%s' exists" % table)
     else:
         return table in table_names
+
