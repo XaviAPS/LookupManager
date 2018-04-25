@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-    {{ document.docfile }}
+    {{ document.docfile.name }}
+
+
+<ul>
+    {% for line in csv_content %}
+        <li>{{ line }}</li>
+    {% endfor %}
+
+</ul>
+
 </body>
 </html>

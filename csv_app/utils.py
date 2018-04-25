@@ -54,9 +54,21 @@ def importCSV_inDB(csv_root, db_root):
 
 
 
-
-
-
+def exportCSV_fromDB(csv_root, db_root):
+    csv_file_name = ((csv_root.split('/'))[-1]).split('.')[0]
+    csv_content = []
+    # If it does not exist, we create a
+    db_connection = sqlite3.connect(db_root)
+    db_cursor = db_connection.cursor()
+    for headers in db_cursor.execute('SELECT * FROM ' + csv_file_name + ' WHERE 1=2'):
+        print(headers)
+        print('ww')
+    for row in db_cursor.execute('SELECT * FROM ' + csv_file_name):
+        row=','.join(row)
+        csv_content.append(row)
+        print(row)
+    #    print("inside")
+    return csv_content
 
 
 """

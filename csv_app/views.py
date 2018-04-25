@@ -7,7 +7,7 @@ from django.template import loader
 import csv
 import codecs
 from csv_app.models import *
-from csv_app.utils import importCSV_inDB
+from csv_app.utils import importCSV_inDB, exportCSV_fromDB
 
 def index(request):
     all_documents = Document.objects.all()
@@ -22,9 +22,10 @@ def index(request):
 def detail(request, document_slug):
     try:
         document = Document.objects.get(slug = document_slug)
+        csv_content = exportCSV_fromDB('./media/' + document.docfile.name, './mydatabase')
     except Document.DoesNotExist:
         raise Http404("Document does not exist")
-    return render(request, 'documents/detail.html', {'document': document})
+    return render(request, 'documents/detail.html', {'document': document, 'csv_content': csv_content})
 
 
 
