@@ -22,10 +22,11 @@ def index(request):
 def detail(request, document_slug):
     try:
         document = Document.objects.get(slug = document_slug)
-        csv_content = exportCSV_fromDB('./media/' + document.docfile.name, './mydatabase')
+        csv_content, header_list = exportCSV_fromDB('./media/' + document.docfile.name, './mydatabase')
     except Document.DoesNotExist:
         raise Http404("Document does not exist")
-    return render(request, 'documents/detail.html', {'document': document, 'csv_content': csv_content})
+    return render(request, 'documents/detail.html', {'document': document,
+                                                     'csv_content': csv_content, 'header_list': header_list})
 
 
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.conf.urls import url
-from csv_app.views import list, index, detail
+from csv_app.views import list, detail
 
 
 urlpatterns = [

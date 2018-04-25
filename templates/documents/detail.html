@@ -2,18 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ document.docfile.name }}</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    {{ document.docfile.name }}
 
 
-<ul>
-    {% for line in csv_content %}
-        <li>{{ line }}</li>
-    {% endfor %}
 
-</ul>
+<table>
+    <tr>
+        {%  for header in header_list %}
+            <th> {{ header }} </th>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        {% for line in csv_content %}
+            <tr>
+            {% for element in line %}
+                <td>{{ element }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
+</table>
 
 </body>
 </html>
