@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
 from csv_app.forms import DocumentForm
@@ -7,7 +7,7 @@ from django.template import loader
 import csv
 import codecs
 from csv_app.models import *
-from csv_app.utils import importCSV_inDB, exportCSV_fromDB
+from csv_app.utils import importCSV_inDB, exportCSV_fromDB, deleteCSV_fromDB
 
 def index(request):
     all_documents = Document.objects.all()
@@ -87,4 +87,13 @@ def show_view(request):
 
     return render(request, "documents/csv_read.html", locals())
 
+def objectDelete(request, object_slug):
 
+    object = get_object_or_404(Document, pk=object_slug)
+    try:
+        os.remove('./media/' + object.docfile.name + '.csv')
+    except OSError:
+        pass
+
+    deleteCSV_fromDB('./media/' + object.docfile.name, './mydatabase')
+    object.delete()

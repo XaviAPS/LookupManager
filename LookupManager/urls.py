@@ -24,7 +24,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^account/', include('django.contrib.auth.urls')),
-    url(r'^documents/', include('csv_app.urls')),
+    url(r'^documents/', include('csv_app.urls'), name='csv_application'),
     url(r'^$', RedirectView.as_view(url='account/login', permanent=False),),
     url(r'^show/', show_view,name='show_view')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

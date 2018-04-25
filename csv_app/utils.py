@@ -54,7 +54,7 @@ def importCSV_inDB(csv_root, db_root):
 
 
 
-def exportCSV_fromDB(csv_root, db_root, csv_file_name=None):
+def exportCSV_fromDB(csv_root, db_root):
     csv_file_name = ((csv_root.split('/'))[-1]).split('.')[0]
     csv_content = []
     header_list = []
@@ -67,10 +67,16 @@ def exportCSV_fromDB(csv_root, db_root, csv_file_name=None):
     for row in db_cursor.execute('SELECT * FROM ' + csv_file_name):
         row=','.join(row).split(',')
         csv_content.append(row)
-    print(csv_content)
-    print(header_list)
+
     return csv_content, header_list
 
+
+
+def deleteCSV_fromDB(csv_root, db_root):
+    csv_file_name = ((csv_root.split('/'))[-1]).split('.')[0]
+    db_connection = sqlite3.connect(db_root)
+    db_cursor = db_connection.cursor()
+    db_cursor.execute('DROP TABLE ' + csv_file_name + ';')
 
 """
 
