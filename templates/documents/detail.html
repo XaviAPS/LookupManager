@@ -2,38 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <title>{{ document.docfile.name }}</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
+    <div class="container" style="margin-top: 30px;">
+        <h1 class="display-4">{{ document.docfile.name }}</h1>
+    </div>
 
-<button><a href="{{ document.docfile.url }}">Download</a></button>
 
-<form action="{% url 'csv_app:delete' document.id %}" method="post">
-    {% csrf_token %}
-    <input type="submit" value="Delete">
-</form>
+    <div class="container" style="margin-top: 30px;display:inline-block;">
+        <form style="float: left; margin-left: 520px;">
+            <input type="button" class="btn btn-primary" value="Download" onclick="window.location.href='{{ document.docfile.url }}'" />
+        </form>
 
-<table>
-    <tr>
-        {%  for header in header_list %}
-            <th> {{ header }} </th>
-        {% endfor %}
-    </tr>
+        <form style="float: right; margin-right: 400px;" action="{% url 'csv_app:delete' document.id %}" method="post">
+            {% csrf_token %}
+                <button type="submit" class="btn btn-danger" value="Delete"> Delete </button>
+        </form>
+    </div>
 
-    <tr>
-        {% for line in csv_content %}
+<div class="container" style="margin-top: 45px;">
+    <table class="table table-striped">
+        <thead>
             <tr>
-            {% for element in line %}
-                <td>{{ element }}</td>
-            {% endfor %}
+                {%  for header in header_list %}
+                    <th class="text-center"> {{ header }} </th>
+                {% endfor %}
             </tr>
-        {% endfor %}
-</table>
+        </thead>
+        <tbody>
 
+            <tr>
+                {% for line in csv_content %}
+                    <tr>
+                    {% for element in line %}
+                        <td align="center">{{ element }}</td>
+                    {% endfor %}
+                    </tr>
+                {% endfor %}
+        </tbody>
+
+    </table>
+</div>
 </body>
 </html>
