@@ -23,7 +23,7 @@
 
 
 
-<form action="{% url "list" %}" method="post" enctype="multipart/form-data">
+<form action="{% url "csv_app:list" %}" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <p>{{ form.non_field_errors }}</p>
 

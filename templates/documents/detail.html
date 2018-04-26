@@ -12,8 +12,11 @@
 <body>
 
 <button><a href="{{ document.docfile.url }}">Download</a></button>
-{#<button><a href="{% url csv_application:delete %}">Delete</a></button>#}
 
+<form action="{% url 'csv_app:delete' document.id %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Delete">
+</form>
 
 <table>
     <tr>

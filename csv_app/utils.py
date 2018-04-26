@@ -17,14 +17,17 @@ def importCSV_inDB(csv_root, db_root):
     if not db_table_exists(csv_file_name):
         # If it does not exist, we create a
         with open(csv_root, "r") as csvfile:
-            reader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+            reader = csv.reader(csvfile, quotechar='|')
             headers_db = ''
             db_connection = sqlite3.connect(db_root)
             db_cursor = db_connection.cursor()
             for i, csv_line in enumerate(reader):
+                print('csv_line: ',csv_line)
                 if i == 0:
-                    header = csv_line[0].split(',')
+                    header = csv_line
+                    print('header: ', header)
                     for head in header:
+                        print('head: ', head)
                         if head == header[-1]:
                             head = "`" + head + "`"
                             head += ' text'
@@ -32,16 +35,19 @@ def importCSV_inDB(csv_root, db_root):
                             head = "`" + head + "`"
                             head += ' text, '
                         headers_db += head
+                        print('headers: ', headers_db)
+
                     db_cursor.execute('CREATE TABLE ' + csv_file_name + '\n' + '(' + headers_db + ')')
                 else:
                     rows_db = ''
-                    row = csv_line[0].split(',')
+                    row = csv_line
                     for j, element in enumerate(row):
                         if j == len(row) - 1:
                             element = "'" + element + "'"
                         else:
                             element = "'" + element + "', "
                         rows_db += element
+                        print('rows: ', rows_db)
                     db_cursor.execute('INSERT INTO ' + csv_file_name + ' VALUES (' + rows_db + ")")
 
             db_connection.commit()

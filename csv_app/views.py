@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
 from csv_app.forms import DocumentForm
@@ -63,7 +63,7 @@ def list(request):
                 importCSV_inDB('./media/' + newdoc.docfile.name, './mydatabase')
 
                 # Redirect to the document list after POST
-                return HttpResponseRedirect(reverse('list'))
+                return HttpResponseRedirect(reverse('csv_app:list'))
 
     else:
         form = DocumentForm()  # A empty, unbound form
@@ -78,6 +78,7 @@ def list(request):
         {'documents': documents, 'form': form}
     )
 
+
 def show_view(request):
     if request.POST and request.FILES:
         csvfile = request.FILES['csv_file']
@@ -87,13 +88,17 @@ def show_view(request):
 
     return render(request, "documents/csv_read.html", locals())
 
-def objectDelete(request, object_slug):
 
-    object = get_object_or_404(Document, pk=object_slug)
-    try:
-        os.remove('./media/' + object.docfile.name + '.csv')
-    except OSError:
-        pass
+def objectDelete(request, document_id):
 
-    deleteCSV_fromDB('./media/' + object.docfile.name, './mydatabase')
-    object.delete()
+    if request.method == 'POST':
+        object = get_object_or_404(Document, pk=document_id)
+        try:
+            os.remove('./media/' + object.docfile.name)
+        except OSError:
+            pass
+
+        deleteCSV_fromDB('./media/' + object.docfile.name, './mydatabase')
+        object.delete()
+
+    return redirect('csv_app:list')
