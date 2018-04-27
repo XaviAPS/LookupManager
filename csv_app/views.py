@@ -8,7 +8,7 @@ import csv
 import codecs
 from csv_app.models import *
 from csv_app.utils import importCSV_inDB, exportCSV_fromDB, deleteCSV_fromDB
-
+from django.contrib.auth import get_user
 def index(request):
     all_documents = Document.objects.all()
     template = loader.get_template('documents/index.html')
@@ -61,7 +61,9 @@ def list(request):
                 newdoc.save()
 
                 importCSV_inDB('./media/' + newdoc.docfile.name, './mydatabase')
-
+                newdoc.docfile.name = newdoc.title + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[0] + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1] + '.csv'
+                new_log = Log(user=get_user(request).get_username(), datetime=datetime.datetime.now(), document=newdoc.docfile, filename=newdoc.title)
+                new_log.save()
                 # Redirect to the document list after POST
                 return HttpResponseRedirect(reverse('csv_app:list'))
 
