@@ -10,6 +10,7 @@ from csv_app.models import *
 from csv_app.utils import importCSV_inDB, exportCSV_fromDB, deleteCSV_fromDB, exportLog_fromDB
 from django.contrib.auth import get_user
 import os
+
 def index(request):
     all_documents = Document.objects.all()
     template = loader.get_template('documents/index.html')
@@ -21,13 +22,28 @@ def index(request):
 
 #If an object from the list is pressed
 def detail(request, document_slug):
+
     try:
         document = Document.objects.get(slug = document_slug)
         csv_content, header_list = exportCSV_fromDB('./media/' + document.docfile.name, './mydatabase')
     except Document.DoesNotExist:
         raise Http404("Document does not exist")
+
+    form = DocumentForm(request.POST, request.FILES)
+    if form.is_valid():
+        newdoc = Document(docfile=request.FILES['docfile'])
+        if newdoc.docfile.name != document.docfile.name:
+            newdoc.docfile.name = document.docfile.name
+
+        # Checks if uploaded doc is CSV
+        if Document(docfile=request.FILES['docfile']).docfile.name.split('.')[1] == 'csv':
+            print('test')
+            # CREAR NUEVO LOG
+            # BUSCAR DOCUMENTO ANTIGUO, MOVER A 'logs/<titulo_doc>' COMO 'log.document'
+            # GUARDAR NUEVO DOC
+
     return render(request, 'documents/detail.html', {'document': document,
-                                                     'csv_content': csv_content, 'header_list': header_list})
+                                                            'csv_content': csv_content, 'header_list': header_list})
 
 
 
@@ -92,20 +108,22 @@ def show_view(request):
     return render(request, "documents/csv_read.html", locals())
 
 
-def objectDelete(request, document_id):
+def object_delete(request, document_id):
 
     if request.method == 'POST':
-        object = get_object_or_404(Document, pk=document_id)
+        document = get_object_or_404(Document, pk=document_id)
         try:
-            os.remove('./media/' + object.docfile.name)
+            os.remove('./media/' + document.docfile.name)
         except OSError:
             pass
 
-        deleteCSV_fromDB('./media/' + object.docfile.name, './mydatabase')
-        object.delete()
+        deleteCSV_fromDB('./media/' + document.docfile.name, './mydatabase')
+        document.delete()
     return redirect('csv_app:list')
 
+
 def viewLogs(request, document_slug):
+
     if request.method == 'POST':
         headers = ['User', 'FileName', 'DateTime']
         content = exportLog_fromDB(document_slug,  './mydatabase')

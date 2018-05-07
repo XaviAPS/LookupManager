@@ -16,6 +16,17 @@
         window.history.back()
     }
     </script>
+
+    <script>
+function hide_show() {
+    var x = document.getElementById("replace_buttons");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
 </head>
 <body>
     <div class="container" style="margin-top: 30px;">
@@ -30,21 +41,57 @@
             <button onclick="goBack()" type="button" class="btn btn-secondary">Go back</button>
         </form>
 
-        <form style="float: left; display: inline; width: 10%;" >
+
+         <form style="float: left; display: inline; width: 10%;" >
             <input type="button" class="btn btn-primary" value="Download" onclick="window.location.href='{{ document.docfile.url }}'" />
         </form>
+
+        <form style="float: left; display: inline; width: 6%;" >
+            <input type="button" class="btn btn-warning" value="Edit" onclick="hide_show()" />
+        </form>
+
+        <form style="float: left; display: inline; width: 8%;"  action="{% url 'csv_app:delete' document.id %}" method="post">
+            {% csrf_token %}
+                <button type="submit" class="btn btn-danger" value="Delete"> Delete </button>
+        </form>
+
+
 
         <form style="float: left; display: inline; width: 8%;"  action="{% url 'csv_app:logs' document.slug %}" method="post">
             {% csrf_token %}
                 <button type="submit" class="btn btn-info" value="logs"> History </button>
         </form>
 
-        <form style="float: left; display: inline; width: 10%;"  action="{% url 'csv_app:delete' document.id %}" method="post">
+
+
+</div>
+
+<div id="replace_buttons" style="display:none;">
+
+    <form action="{% url "csv_app:list" %}" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-                <button type="submit" class="btn btn-danger" value="Delete"> Delete </button>
+            <p>{{ form.non_field_errors }}</p>
+
+            <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+
+            <p>
+                {{ form.docfile.errors }}
+                {{ form.docfile }}
+            </p>
+
+            <p><input type="submit" value="Upload"/></p>
         </form>
 
-    </div>
+
+
+
+</div>
+
+
+</body>
+
+
+
 
 
 <div class="container" style="margin-top: 155px;">
