@@ -11,6 +11,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+    <script>
+    function goBack() {
+        window.history.back()
+    }
+    </script>
 </head>
 <body>
     <div class="container" style="margin-top: 30px;">
@@ -18,18 +23,31 @@
     </div>
 
 
-    <div class="container" style="margin-top: 30px;display:inline-block;">
-        <form style="float: left; margin-left: 520px;">
+    <div style="margin-top: 50px; margin-left: 80px">
+
+
+        <form style="float: left; display: inline; width: 34%;">
+            <button onclick="goBack()" type="button" class="btn btn-secondary">Go back</button>
+        </form>
+
+        <form style="float: left; display: inline; width: 10%;" >
             <input type="button" class="btn btn-primary" value="Download" onclick="window.location.href='{{ document.docfile.url }}'" />
         </form>
 
-        <form style="float: right; margin-right: 400px;" action="{% url 'csv_app:delete' document.id %}" method="post">
+        <form style="float: left; display: inline; width: 8%;"  action="{% url 'csv_app:logs' document.slug %}" method="post">
+            {% csrf_token %}
+                <button type="submit" class="btn btn-info" value="logs"> History </button>
+        </form>
+
+        <form style="float: left; display: inline; width: 10%;"  action="{% url 'csv_app:delete' document.id %}" method="post">
             {% csrf_token %}
                 <button type="submit" class="btn btn-danger" value="Delete"> Delete </button>
         </form>
+
     </div>
 
-<div class="container" style="margin-top: 45px;">
+
+<div class="container" style="margin-top: 155px;">
     <table class="table table-striped">
         <thead>
             <tr>

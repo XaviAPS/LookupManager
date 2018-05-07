@@ -7,8 +7,9 @@ from django.template import loader
 import csv
 import codecs
 from csv_app.models import *
-from csv_app.utils import importCSV_inDB, exportCSV_fromDB, deleteCSV_fromDB
+from csv_app.utils import importCSV_inDB, exportCSV_fromDB, deleteCSV_fromDB, exportLog_fromDB
 from django.contrib.auth import get_user
+import os
 def index(request):
     all_documents = Document.objects.all()
     template = loader.get_template('documents/index.html')
@@ -102,5 +103,15 @@ def objectDelete(request, document_id):
 
         deleteCSV_fromDB('./media/' + object.docfile.name, './mydatabase')
         object.delete()
-
     return redirect('csv_app:list')
+
+def viewLogs(request, document_slug):
+    if request.method == 'POST':
+        headers = ['User', 'FileName', 'DateTime']
+        content = exportLog_fromDB(document_slug,  './mydatabase')
+        print(content)
+    return render(
+        request,
+        'documents/logs.html',
+        {'headers': headers, 'content': content}
+    )

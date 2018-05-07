@@ -56,10 +56,22 @@ def importCSV_inDB(csv_root, db_root):
 
 
 
+def exportLog_fromDB(filename, db_root):
+    db_connection = sqlite3.connect(db_root)
+    db_cursor = db_connection.cursor()
+    content = []
+    for row in db_cursor.execute('SELECT * ' + 'FROM csv_app_log;'):
+        if filename in row:
+            row = row[1:]
+            row = [x for x in row if x != filename]
+            content.append(row)
+    return content
 
 
-
-
+'''
+ +
+                                'WHERE filename = ' + filename + ';'
+'''
 def exportCSV_fromDB(csv_root, db_root):
     csv_file_name = ((csv_root.split('/'))[-1]).split('.')[0]
     csv_content = []
