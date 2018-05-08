@@ -10,7 +10,7 @@ from csv_app.models import *
 from csv_app.utils import importCSV_inDB, exportCSV_fromDB, deleteCSV_fromDB, exportLog_fromDB
 from django.contrib.auth import get_user
 import os
-
+import shutil
 def index(request):
     all_documents = Document.objects.all()
     template = loader.get_template('documents/index.html')
@@ -34,16 +34,35 @@ def detail(request, document_slug):
         newdoc = Document(docfile=request.FILES['docfile'])
         if newdoc.docfile.name != document.docfile.name:
             newdoc.docfile.name = document.docfile.name
+            newdoc.title = document.title
 
         # Checks if uploaded doc is CSV
         if Document(docfile=request.FILES['docfile']).docfile.name.split('.')[1] == 'csv':
-            print('test')
-            # CREAR NUEVO LOG
-            # BUSCAR DOCUMENTO ANTIGUO, MOVER A 'logs/<titulo_doc>' COMO 'log.document'
-            # GUARDAR NUEVO DOC
+           #Check if log dir exists, else create
+            if not os.path.exists('./media/logs/'+document.title):
+                os.makedirs('./media/logs/'+document.title)
+            # Move old file to the log directory
+            shutil.move('./media/' + document.docfile.name, './media/logs/'+document.title)
+            # Rename old file
+            os.rename('./media/logs/'+document.title+'/' + document.docfile.name, ('./media/logs/'+document.title+'/'
+                      + document.title + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[
+                        0] + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1] + '.csv').replace(":", "-"))
+            # Create Log
+
+            new_log = Log(user=get_user(request).get_username(), datetime=((str(datetime.datetime.now())).split('.')[0]).split(' ')[
+                        0] + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1],
+                      document=document.docfile, filename=newdoc.title)
+        get_object_or_404(Document, pk=document.id)
+        newdoc.save()
+        deleteCSV_fromDB('./media/' + document.docfile.name, './media')
+        importCSV_inDB('./media/' + newdoc.docfile.name, './mydatabase')
+        new_log.save()
 
     return render(request, 'documents/detail.html', {'document': document,
-                                                            'csv_content': csv_content, 'header_list': header_list})
+                                                         'csv_content': csv_content, 'header_list': header_list,
+                                                         'form': form})
+
+
 
 
 

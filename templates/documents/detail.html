@@ -68,8 +68,8 @@ function hide_show() {
 
 <div id="replace_buttons" style="display:none;">
 
-    <form action="{% url "csv_app:list" %}" method="post" enctype="multipart/form-data">
-            {% csrf_token %}
+    <form action="{% url "csv_app:detail" document.slug %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
             <p>{{ form.non_field_errors }}</p>
 
             <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
@@ -80,7 +80,7 @@ function hide_show() {
             </p>
 
             <p><input type="submit" value="Upload"/></p>
-        </form>
+    </form>
 
 
 

@@ -19,7 +19,7 @@ class Document(models.Model):
 
 class Log(models.Model):
     user = models.CharField(max_length=25, default='unknown')
-    datetime = models.DateTimeField(datetime.datetime.now())
+    datetime = models.CharField(max_length=50)
     document = models.FileField()
     filename = models.CharField(max_length=20)
 
