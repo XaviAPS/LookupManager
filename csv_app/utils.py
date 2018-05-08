@@ -60,10 +60,14 @@ def exportLog_fromDB(filename, db_root):
     db_connection = sqlite3.connect(db_root)
     db_cursor = db_connection.cursor()
     content = []
-    for row in db_cursor.execute('SELECT * ' + 'FROM csv_app_log;'):
+    for i, row in enumerate(db_cursor.execute('SELECT * ' + 'FROM csv_app_log;')):
+        print('row: ', row)
+        if(i==2):
+            next(db_cursor.execute('SELECT * ' + 'FROM csv_app_log;'))
         if filename in row:
             row = row[1:]
-            row = [x for x in row if x != filename]
+            row = [x for i, x in enumerate(row) if i != 2 and x != filename]
+            print('end_row: ', row)
             content.append(row)
     return content
 
