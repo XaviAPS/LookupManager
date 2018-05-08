@@ -23,4 +23,3 @@ class Log(models.Model):
     document = models.FileField()
     filename = models.CharField(max_length=20)
 
-

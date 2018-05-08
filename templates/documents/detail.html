@@ -11,11 +11,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-    <script>
-    function goBack() {
-        window.history.back()
-    }
-    </script>
+
+
 
     <script>
 function hide_show() {
@@ -38,7 +35,12 @@ function hide_show() {
 
 
         <form style="float: left; display: inline; width: 34%;">
-            <button onclick="goBack()" type="button" class="btn btn-secondary">Go back</button>
+            <button id="goBack" type="button" class="btn btn-secondary">Go back</button>
+            <script type="text/javascript">
+            document.getElementById("goBack").onclick = function () {
+                window.location.replace("http://localhost:8000/documents/");
+            };
+            </script>
         </form>
 
 
@@ -66,7 +68,7 @@ function hide_show() {
 
 </div>
 
-<div id="replace_buttons" style="display:none;">
+<div id="replace_buttons" style="display:none;margin-top: 100px; margin-left: 450px; ">
 
     <form action="{% url "csv_app:detail" document.slug %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
@@ -81,10 +83,6 @@ function hide_show() {
 
             <p><input type="submit" value="Upload"/></p>
     </form>
-
-
-
-
 </div>
 
 

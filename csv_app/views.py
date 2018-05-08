@@ -11,6 +11,8 @@ from csv_app.utils import importCSV_inDB, exportCSV_fromDB, deleteCSV_fromDB, ex
 from django.contrib.auth import get_user
 import os
 import shutil
+
+
 def index(request):
     all_documents = Document.objects.all()
     template = loader.get_template('documents/index.html')
@@ -47,24 +49,24 @@ def detail(request, document_slug):
             os.rename('./media/logs/'+document.title+'/' + document.docfile.name, ('./media/logs/'+document.title+'/'
                       + document.title + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[
                         0] + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1] + '.csv').replace(":", "-"))
-            # Create Log
 
+            # Set up and save new document
+            newdoc.title = newdoc.docfile.name.replace(".csv", "")
+            newdoc.slug = newdoc.title.replace(" ", "-")
+            newdoc.save()
+
+            # Create Log
             new_log = Log(user=get_user(request).get_username(), datetime=((str(datetime.datetime.now())).split('.')[0]).split(' ')[
-                        0] + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1],
+                        0] + ' ' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1],
                       document=document.docfile, filename=newdoc.title)
-        get_object_or_404(Document, pk=document.id)
-        newdoc.save()
-        deleteCSV_fromDB('./media/' + document.docfile.name, './media')
-        importCSV_inDB('./media/' + newdoc.docfile.name, './mydatabase')
-        new_log.save()
+            new_log.save()
+            Document.objects.filter(id=document.id).delete()
+            deleteCSV_fromDB('./media/' + document.docfile.name, './mydatabase')
+            importCSV_inDB('./media/' + newdoc.docfile.name, './mydatabase')
 
     return render(request, 'documents/detail.html', {'document': document,
                                                          'csv_content': csv_content, 'header_list': header_list,
                                                          'form': form})
-
-
-
-
 
 def list(request):
     # Handle file upload
