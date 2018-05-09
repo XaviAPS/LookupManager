@@ -81,10 +81,9 @@ def detail(request, document_slug):
             existing_doc = Document.objects.get(slug=document_slug)
             deleteCSV_fromDB('./media/' + existing_doc.docfile.name, './mydatabase')
             importCSV_inDB('./media/' + newdoc.docfile.name, './mydatabase')
-    all_logs = Log.objects.filter(slug=document_slug)
     return render(request, 'documents/detail.html', {'document': existing_doc,
                                                          'csv_content': csv_content, 'header_list': header_list,
-                                                         'form': form, 'all_logs':all_logs})
+                                                         'form': form})
 
 def list(request):
     # Handle file upload
@@ -168,11 +167,26 @@ def viewLogs(request, document_slug):
     if request.method == 'POST':
         print('doc slug:' + document_slug)
 
-        headers = ['User', 'DateTime', 'FileName', 'Action' ]
+        headers = ['User', 'DateTime', 'FileName', 'Action',]
         content = exportLog_fromDB(document_slug,  './mydatabase')
-        print(content)
+
+
+        lines = []
+        for j, line in enumerate(content):
+            lines.append(tuple(line))
+            #lines.append(logged_docs[j])
+
+
+        all_logs = Log.objects.filter(slug=document_slug)
+        logged_docs = []
+        for x, log in enumerate(all_logs):
+            lines[x] = lines[x] + tuple([log.document])
+            print(log.document.name)
+
+        print(lines)
+
     return render(
         request,
         'documents/logs.html',
-        {'headers': headers, 'content': content}
+        {'headers': headers, 'content': lines}
     )
