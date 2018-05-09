@@ -26,32 +26,40 @@ def index(request):
 def detail(request, document_slug):
 
     try:
-        document = Document.objects.get(slug = document_slug)
-        csv_content, header_list = exportCSV_fromDB('./media/' + document.docfile.name, './mydatabase')
+        existing_doc = Document.objects.get(slug = document_slug)
+        csv_content, header_list = exportCSV_fromDB('./media/' + existing_doc.docfile.name, './mydatabase')
     except Document.DoesNotExist:
         raise Http404("Document does not exist")
 
     form = DocumentForm(request.POST, request.FILES)
     if form.is_valid():
         newdoc = Document(docfile=request.FILES['docfile'])
-        if newdoc.docfile.name != document.docfile.name:
-            newdoc.docfile.name = document.docfile.name
-            newdoc.title = document.title
+        if newdoc.docfile.name != existing_doc.docfile.name:
+            newdoc.docfile.name = existing_doc.docfile.name
+            newdoc.title = existing_doc.title
 
         # Checks if uploaded doc is CSV
         if Document(docfile=request.FILES['docfile']).docfile.name.split('.')[1] == 'csv':
-           #Check if log dir exists, else create
+            # Check if log dir exists, else create
             raw_doc = Document(docfile=request.FILES['docfile'])
-            if not os.path.exists('./media/logs/'+document.title):
-                os.makedirs('./media/logs/'+document.title)
-            # Move old file to the log directory
-            shutil.move('./media/' + document.docfile.name, './media/logs/'+document.title)
-            # Rename old file
-            new_path_name =('./media/logs/'+document.title+'/'
-                      + document.title + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[
-                        0] + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1] + '.csv').replace(":", "-")
+            if not os.path.exists('./media/logs/'+existing_doc.title):
+                os.makedirs('./media/logs/'+existing_doc.title)
+            if not os.path.exists('./media/backups/'+existing_doc.title):
+                os.makedirs('./media/backups/'+existing_doc.title)
 
-            os.rename('./media/logs/'+document.title+'/' + document.docfile.name, new_path_name)
+            # Move old file to the log directory
+            shutil.move('./media/' + existing_doc.docfile.name, './media/backups/'+existing_doc.title)
+
+            # Rename old file
+            info_file_name = (existing_doc.title + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[
+                0] + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1] + '.csv').replace(":", "-")
+
+            backup_path_name ='./media/backups/' + existing_doc.title + '/' + info_file_name
+
+            os.rename('./media/backups/'+existing_doc.title+'/' + existing_doc.docfile.name, backup_path_name)
+
+            logged_file_document = open(backup_path_name)
+            django_file = File(logged_file_document)
 
             # Set up and save new document
             newdoc.title = newdoc.docfile.name.replace(".csv", "")
@@ -61,16 +69,22 @@ def detail(request, document_slug):
             # Create Log
             new_log = Log(user=get_user(request).get_username(), datetime=((str(datetime.datetime.now())).split('.')[0]).split(' ')[
                         0] + ' ' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1],
-                      document=document.docfile, filename=raw_doc.docfile.name, action='Edit', slug=document_slug)
+                      document= existing_doc.docfile, filename=raw_doc.docfile.name, action='Edit', slug=document_slug)
+            new_log.document.save('./logs/' + existing_doc.title + '/' + info_file_name, django_file)
             new_log.save()
+            print('log file name: ', new_log.document.name)
+            print('existing_doc.docfile.name', existing_doc.docfile.name)
 
-            Document.objects.filter(id=document.id).delete()
-            deleteCSV_fromDB('./media/' + document.docfile.name, './mydatabase')
+            Document.objects.filter(id=existing_doc.id).delete()
+
+            print('POST FILTER existing_doc.docfile.name', existing_doc.docfile.name)
+            existing_doc = Document.objects.get(slug=document_slug)
+            deleteCSV_fromDB('./media/' + existing_doc.docfile.name, './mydatabase')
             importCSV_inDB('./media/' + newdoc.docfile.name, './mydatabase')
-
-    return render(request, 'documents/detail.html', {'document': document,
+    all_logs = Log.objects.filter(slug=document_slug)
+    return render(request, 'documents/detail.html', {'document': existing_doc,
                                                          'csv_content': csv_content, 'header_list': header_list,
-                                                         'form': form})
+                                                         'form': form, 'all_logs':all_logs})
 
 def list(request):
     # Handle file upload
