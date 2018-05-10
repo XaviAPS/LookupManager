@@ -3,23 +3,12 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
 from csv_app.forms import DocumentForm
-from django.template import loader
-import csv
-import codecs
 from csv_app.models import *
 from csv_app.utils import importCSV_inDB, exportCSV_fromDB, deleteCSV_fromDB, exportLog_fromDB
 from django.contrib.auth import get_user
 import os
 import shutil
 from django.core.files import File
-
-def index(request):
-    all_documents = Document.objects.all()
-    template = loader.get_template('documents/index.html')
-    context = {
-        'all_documents':all_documents,
-    }
-    return render(request, 'documents/index.html', context)
 
 
 #If an object from the list is pressed
@@ -77,13 +66,13 @@ def detail(request, document_slug):
 
             Document.objects.filter(id=existing_doc.id).delete()
 
-            print('POST FILTER existing_doc.docfile.name', existing_doc.docfile.name)
             existing_doc = Document.objects.get(slug=document_slug)
             deleteCSV_fromDB('./media/' + existing_doc.docfile.name, './mydatabase')
             importCSV_inDB('./media/' + newdoc.docfile.name, './mydatabase')
     return render(request, 'documents/detail.html', {'document': existing_doc,
                                                          'csv_content': csv_content, 'header_list': header_list,
                                                          'form': form})
+
 
 def list(request):
     # Handle file upload
@@ -105,22 +94,49 @@ def list(request):
 
             #Stores it in DB and in /media
             if not repeated and is_csv:
-                old_doc = Document(docfile=request.FILES['docfile'])
 
+                old_doc = Document(docfile=request.FILES['docfile'])
                 newdoc = Document(docfile=request.FILES['docfile'])
                 newdoc.title = newdoc.docfile.name.split('.')[0]
 
+                old_doc.title = newdoc.title
+
+                if not os.path.exists('./media/logs/' + old_doc.title):
+                    os.makedirs('./media/logs/' + old_doc.title)
+                if not os.path.exists('./media/backups/' + old_doc.title):
+                    os.makedirs('./media/backups/' + old_doc.title)
+
+
                 #Generate the Url per object (slug)
-                if ' ' in newdoc.title:
-                    newdoc.slug = newdoc.title.replace(' ', '-')
-                else:
-                    newdoc.slug = newdoc.title
+
+                newdoc.slug = newdoc.title.replace(' ', '-')
                 newdoc.save()
 
+
                 importCSV_inDB('./media/' + newdoc.docfile.name, './mydatabase')
-                newdoc.docfile.name = newdoc.title + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[0] + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1] + '.csv'
-                new_log = Log(user=get_user(request).get_username(), datetime=datetime.datetime.now(), document=newdoc.docfile, filename=old_doc.title, action='Upload', slug=newdoc.slug)
+
+
+                #Name variables of paths
+                info_file_name = (newdoc.title + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[
+                    0] + '_' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1] + '.csv').replace(":", "-")
+
+                # Move old file to the log directory
+                shutil.copy2('./media/' + old_doc.docfile.name, './media/backups/' + newdoc.title)
+
+                backup_path_name = './media/backups/' + newdoc.title + '/' + info_file_name
+
+                os.rename('./media/backups/' + newdoc.title + '/' + old_doc.docfile.name, backup_path_name)
+
+                logged_file_document = open(backup_path_name)
+                django_file = File(logged_file_document)
+
+                #Log Creation
+                new_log = Log(user=get_user(request).get_username(), datetime=((str(datetime.datetime.now())).split('.')[0]).split(' ')[
+                                           0] + ' ' + ((str(datetime.datetime.now())).split('.')[0]).split(' ')[1], document=old_doc.docfile.name, filename=old_doc.docfile.name, action='Upload', slug=newdoc.slug)
+                new_log.document.save('./logs/' + newdoc.title + '/' + info_file_name, django_file)
                 new_log.save()
+
+
                 # Redirect to the document list after POST
                 return HttpResponseRedirect(reverse('csv_app:list'))
 
@@ -136,16 +152,6 @@ def list(request):
         'documents/list.html',
         {'documents': documents, 'form': form}
     )
-
-
-def show_view(request):
-    if request.POST and request.FILES:
-        csvfile = request.FILES['csv_file']
-        dialect = csv.Sniffer().sniff(codecs.EncodedFile(csvfile, "utf-8").read(1024))
-        csvfile.open()
-        reader = csv.reader(codecs.EncodedFile(csvfile, "utf-8"), delimiter=',', dialect=dialect)
-
-    return render(request, "documents/csv_read.html", locals())
 
 
 def object_delete(request, document_id):
@@ -164,26 +170,24 @@ def object_delete(request, document_id):
 
 def viewLogs(request, document_slug):
 
-    if request.method == 'POST':
-        print('doc slug:' + document_slug)
+    # if request.method == 'POST':
+    print('doc slug:' + document_slug)
 
-        headers = ['User', 'DateTime', 'FileName', 'Action',]
-        content = exportLog_fromDB(document_slug,  './mydatabase')
-
-
-        lines = []
-        for j, line in enumerate(content):
-            lines.append(tuple(line))
-            #lines.append(logged_docs[j])
+    headers = ['User', 'DateTime', 'FileName', 'Action',]
+    content = exportLog_fromDB(document_slug,  './mydatabase')
+    form = DocumentForm(request.POST, request.FILES)
 
 
-        all_logs = Log.objects.filter(slug=document_slug)
-        logged_docs = []
-        for x, log in enumerate(all_logs):
-            lines[x] = lines[x] + tuple([log.document])
-            print(log.document.name)
+    lines = []
+    for j, line in enumerate(content):
+        lines.append(tuple(line))
+        #lines.append(logged_docs[j])
 
-        print(lines)
+
+    all_logs = Log.objects.filter(slug=document_slug)
+    logged_docs = []
+    for x, log in enumerate(all_logs):
+        lines[x] = lines[x] + tuple([log.document])
 
     return render(
         request,

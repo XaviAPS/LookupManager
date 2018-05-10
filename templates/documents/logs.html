@@ -42,7 +42,7 @@
                     {% for line in content %}
                         <tr>
                             {% for element in line %}
-                                <td align="center"> {% if not forloop.last %}{{ element }}{%  else %}<form><input onclick="window.location.href='{{ element.url }}'" type=submit value="Download" class="btn btn-success" style="width:50%"></form>{% endif %} </td>
+                                <td align="center"> {% if not forloop.last %}{{ element }}{%  else %}<form method="get" action={{ element.url }}><button type="submit" class="btn btn-primary">Download</button></form>{% endif %} </td>
                             {% endfor %}
 
 

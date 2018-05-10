@@ -17,7 +17,6 @@ from django.views.generic.base import RedirectView
 from django.conf.urls import include, url
 from django.conf import settings
 from django.conf.urls.static import static
-from csv_app.views import show_view
 
 from django.contrib import admin
 
@@ -26,5 +25,4 @@ urlpatterns = [
     url(r'^account/', include('django.contrib.auth.urls')),
     url(r'^documents/', include('csv_app.urls')),
     url(r'^$', RedirectView.as_view(url='account/login', permanent=False),),
-    url(r'^show/', show_view,name='show_view')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

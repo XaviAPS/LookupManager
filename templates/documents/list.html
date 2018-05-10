@@ -25,9 +25,14 @@
                     <a href="{{ document.slug }}" class="list-group-item list-group-item-action">{{ document.title }}</a>
                 {% endfor %}
 
+            {# shows the msg that there are no docs    #}
             {% else %}
-                <p>No documents.</p>
+                <div class="alert alert-warning" style="margin-bottom: 55px;margin-top: 55px">
+                    <strong>There are no documents to show!</strong>
+                </div>
             {% endif %}
+
+
         </div>
         <!-- Upload form. Note enctype attribute! -->
         <form style="margin-left: 350px" action="{% url "csv_app:list" %}" method="post" enctype="multipart/form-data">

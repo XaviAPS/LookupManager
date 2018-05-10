@@ -13,7 +13,8 @@ args:
 """
 
 def importCSV_inDB(csv_root, db_root):
-    csv_file_name = ((csv_root.split('/'))[-1]).split('.')[0]
+    csv_file_name = ((((csv_root.split('/'))[-1]).split('.')[0]).replace(" ", "_")).replace("-","_")
+
     if not db_table_exists(csv_file_name):
         # If it does not exist, we create a
         with open(csv_root, "r") as csvfile:
@@ -57,6 +58,7 @@ def importCSV_inDB(csv_root, db_root):
 
 
 def exportLog_fromDB(filename, db_root):
+    filename = (filename.replace(" ", "_")).replace("-","_")
     db_connection = sqlite3.connect(db_root)
     db_cursor = db_connection.cursor()
     content = []
@@ -72,12 +74,8 @@ def exportLog_fromDB(filename, db_root):
     return content
 
 
-'''
- +
-                                'WHERE filename = ' + filename + ';'
-'''
 def exportCSV_fromDB(csv_root, db_root):
-    csv_file_name = ((csv_root.split('/'))[-1]).split('.')[0]
+    csv_file_name = ((((csv_root.split('/'))[-1]).split('.')[0]).replace(" ", "_")).replace("-","_")
     csv_content = []
     header_list = []
     # If it does not exist, we create a
@@ -95,7 +93,7 @@ def exportCSV_fromDB(csv_root, db_root):
 
 
 def deleteCSV_fromDB(csv_root, db_root):
-    csv_file_name = ((csv_root.split('/'))[-1]).split('.')[0]
+    csv_file_name = ((((csv_root.split('/'))[-1]).split('.')[0]).replace(" ", "_")).replace("-","_")
     db_connection = sqlite3.connect(db_root)
     db_cursor = db_connection.cursor()
     db_cursor.execute('DROP TABLE ' + csv_file_name + ';')
@@ -123,37 +121,37 @@ def db_table_exists(table, cursor=None):
 
 
 # Get The Current Date Or Time
-def getdatetime(timedateformat='complete'):
-    from datetime import datetime
-    timedateformat = timedateformat.lower()
-    if timedateformat == 'day':
-        return ((str(datetime.now())).split(' ')[0]).split('-')[2]
-    elif timedateformat == 'month':
-        return ((str(datetime.now())).split(' ')[0]).split('-')[1]
-    elif timedateformat == 'year':
-        return ((str(datetime.now())).split(' ')[0]).split('-')[0]
-    elif timedateformat == 'hour':
-        return (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[0]
-    elif timedateformat == 'minute':
-        return (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[1]
-    elif timedateformat == 'second':
-        return (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[2]
-    elif timedateformat == 'millisecond':
-        return (str(datetime.now())).split('.')[1]
-    elif timedateformat == 'yearmonthday':
-        return (str(datetime.now())).split(' ')[0]
-    elif timedateformat == 'daymonthyear':
-        return ((str(datetime.now())).split(' ')[0]).split('-')[2] + '-' + ((str(datetime.now())).split(' ')[0]).split('-')[1] + '-' + ((str(datetime.now())).split(' ')[0]).split('-')[0]
-    elif timedateformat == 'hourminutesecond':
-        return ((str(datetime.now())).split(' ')[1]).split('.')[0]
-    elif timedateformat == 'secondminutehour':
-        return (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[2] + ':' + (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[1] + ':' + (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[0]
-    elif timedateformat == 'complete':
-        return str(datetime.now())
-    elif timedateformat == 'datetime':
-        return (str(datetime.now())).split('.')[0]
-    elif timedateformat == 'timedate':
-        return ((str(datetime.now())).split('.')[0]).split(' ')[1] + ' ' + ((str(datetime.now())).split('.')[0]).split(' ')[0]
+# def getdatetime(timedateformat='complete'):
+#     from datetime import datetime
+#     timedateformat = timedateformat.lower()
+#     if timedateformat == 'day':
+#         return ((str(datetime.now())).split(' ')[0]).split('-')[2]
+#     elif timedateformat == 'month':
+#         return ((str(datetime.now())).split(' ')[0]).split('-')[1]
+#     elif timedateformat == 'year':
+#         return ((str(datetime.now())).split(' ')[0]).split('-')[0]
+#     elif timedateformat == 'hour':
+#         return (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[0]
+#     elif timedateformat == 'minute':
+#         return (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[1]
+#     elif timedateformat == 'second':
+#         return (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[2]
+#     elif timedateformat == 'millisecond':
+#         return (str(datetime.now())).split('.')[1]
+#     elif timedateformat == 'yearmonthday':
+#         return (str(datetime.now())).split(' ')[0]
+#     elif timedateformat == 'daymonthyear':
+#         return ((str(datetime.now())).split(' ')[0]).split('-')[2] + '-' + ((str(datetime.now())).split(' ')[0]).split('-')[1] + '-' + ((str(datetime.now())).split(' ')[0]).split('-')[0]
+#     elif timedateformat == 'hourminutesecond':
+#         return ((str(datetime.now())).split(' ')[1]).split('.')[0]
+#     elif timedateformat == 'secondminutehour':
+#         return (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[2] + ':' + (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[1] + ':' + (((str(datetime.now())).split(' ')[1]).split('.')[0]).split(':')[0]
+#     elif timedateformat == 'complete':
+#         return str(datetime.now())
+#     elif timedateformat == 'datetime':
+#         return (str(datetime.now())).split('.')[0]
+#     elif timedateformat == 'timedate':
+#         return ((str(datetime.now())).split('.')[0]).split(' ')[1] + ' ' + ((str(datetime.now())).split('.')[0]).split(' ')[0]
 
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
