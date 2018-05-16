@@ -120,6 +120,7 @@ def db_table_exists(table, cursor=None):
         return table in table_names
 
 
+
 # Get The Current Date Or Time
 # def getdatetime(timedateformat='complete'):
 #     from datetime import datetime

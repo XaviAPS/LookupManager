@@ -5,15 +5,18 @@ from django.urls import reverse
 from csv_app.forms import DocumentForm
 from csv_app.models import *
 from csv_app.utils import importCSV_inDB, exportCSV_fromDB, deleteCSV_fromDB, exportLog_fromDB
-from django.contrib.auth import get_user
+from django.contrib.auth import *
 import os
 import shutil
 from django.core.files import File
-
+from django.contrib.auth.urls import *
+from django.contrib.auth.decorators import login_required
 
 #If an object from the list is pressed
-def detail(request, document_slug):
 
+
+@login_required(login_url='/account/login/')
+def detail(request, document_slug):
     try:
         existing_doc = Document.objects.get(slug = document_slug)
         csv_content, header_list = exportCSV_fromDB('./media/' + existing_doc.docfile.name, './mydatabase')
@@ -73,7 +76,7 @@ def detail(request, document_slug):
                                                          'csv_content': csv_content, 'header_list': header_list,
                                                          'form': form})
 
-
+@login_required(login_url='/account/login/')
 def list(request):
     # Handle file upload
     if request.method == 'POST':
@@ -167,7 +170,7 @@ def object_delete(request, document_id):
         document.delete()
     return redirect('csv_app:list')
 
-
+@login_required(login_url='/account/login/')
 def viewLogs(request, document_slug):
 
     # if request.method == 'POST':

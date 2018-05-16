@@ -22,7 +22,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^account/', include('django.contrib.auth.urls')),
+    url(r'^account/', include('django.contrib.auth.urls'), name='login_page'),
     url(r'^documents/', include('csv_app.urls')),
     url(r'^$', RedirectView.as_view(url='account/login', permanent=False),),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
