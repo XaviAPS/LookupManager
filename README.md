@@ -1,3 +1,3 @@
 # LookupManager
 
-Migrated to Gitlab (Private) 
+Migrated to Gitlab
