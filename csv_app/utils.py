@@ -1,6 +1,6 @@
 import csv
 import sqlite3
-
+import json
 """
 This function imports a CSV (comma delimited) into a SQLite3 DB
 Creates a table named: <document_name>
@@ -157,3 +157,39 @@ def db_table_exists(table, cursor=None):
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
     return 'user_{0}/{1}'.format(instance.user.id, filename)
+
+def csv_to_JSON(file, json_file):
+
+    csvfile = open(file, 'r')
+    reader = csv.DictReader(csvfile)
+    headers = reader.fieldnames
+    jsonfile = open(json_file, 'w')
+
+    reader = csv.DictReader(csvfile, headers)
+    # next(reader, None)  # skip the headers
+    all_lines = list(reader)
+    for row in all_lines:
+
+        if 'LATITUDE' in row and 'LONGITUDE' in row:
+            row['coords'] = '{ asdtypeasd: asdPointasd,asdcoordinatesasd: [' + row['LATITUDE'] +', ' + row['LONGITUDE']+'] }'
+
+        if row == all_lines[-1]:
+            jsonfile.write(
+                json.dumps(row, sort_keys=False, indent=4, separators=(',', ': '), ensure_ascii=False) + '\n')
+
+        else:
+            jsonfile.write(
+                json.dumps(row, sort_keys=False, indent=4, separators=(',', ': '), ensure_ascii=False) + ',\n')
+    jsonfile.close()
+
+
+
+
+    with open(json_file, "rt") as json_r:
+        with open('docs/final.json', "wt") as json_w:
+            for line in json_r:
+                if 'coords' in line:
+                    json_w.write(((line.replace('asd', '"')).replace('"{','{')).replace('}"', "}").replace('"Point",','"Point",\n\t\t\t\t'))
+                    print(line)
+                else:
+                    json_w.write(line)

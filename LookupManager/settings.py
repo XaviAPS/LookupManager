@@ -25,7 +25,7 @@ SECRET_KEY = '%$g9ta53dzpmupw$x#31*3p_pc!(c3f&i_!zpudl2vcf!aj%va'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://lpm.westeurope.cloudapp.azure.com']
+ALLOWED_HOSTS = ['https://lpm.westeurope.cloudapp.azure.com', '*']
 
 
 # Application definition

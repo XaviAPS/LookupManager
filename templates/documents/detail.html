@@ -27,10 +27,6 @@ function hide_show() {
 </head>
 <body>
 
-{#{% if user.is_authenticated %}#}
-{#<h1>asd</h1>#}
-{#{% endif %}#}
-
 
     <div class="container" style="margin-top: 30px;">
         <h1 class="display-4">{{ document.docfile.name }}</h1>
@@ -40,7 +36,7 @@ function hide_show() {
     <div style="margin-top: 50px; margin-left: 80px">
 
 
-        <form style="float: left; display: inline; width: 34%;">
+        <form style="float: left; display: inline; width: 25%;">
             <button id="goBack" type="button" class="btn btn-secondary">Go back</button>
             <script type="text/javascript">
             document.getElementById("goBack").onclick = function () {
@@ -50,22 +46,26 @@ function hide_show() {
         </form>
 
 
-         <form style="float: left; display: inline; width: 10%;" >
-            <input type="button" class="btn btn-primary" value="Download" onclick="window.location.href='{{ document.docfile.url }}'" />
+        <form style="float: right; display: inline; width: 42%;" >
+            <button type="button" class="btn btn-dark">Download JSON</button>
+        </form>
+
+         <form style="float: right; display: inline; width: 12%;" >
+            <input type="button" class="btn btn-primary" value="Download CSV" onclick="window.location.href='{{ document.docfile.url }}'" />
         </form>
 
         <form style="float: left; display: inline; width: 6%;" >
             <input type="button" class="btn btn-warning" value="Edit" onclick="hide_show()" />
         </form>
 
-        <form style="float: left; display: inline; width: 8%;"  action="{% url 'csv_app:delete' document.id %}" method="post">
+        <form style="float: left; display: inline; width: 7%;"  action="{% url 'csv_app:delete' document.id %}" method="post">
             {% csrf_token %}
                 <button type="submit" class="btn btn-danger" value="Delete"> Delete </button>
         </form>
 
 
 
-        <form style="float: left; display: inline; width: 8%;"  action="{% url 'csv_app:logs' document.slug %}" method="post">
+        <form style="float: left; display: inline; width: 5%;"  action="{% url 'csv_app:logs' document.slug %}" method="post">
             {% csrf_token %}
                 <button type="submit" class="btn btn-info" value="logs"> History </button>
         </form>
