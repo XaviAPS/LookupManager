@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <title>{{ document.docfile.name }}</title>
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 
 
 
@@ -46,8 +48,8 @@ function hide_show() {
         </form>
 
 
-        <form style="float: right; display: inline; width: 42%;" >
-            <button type="button" class="btn btn-dark">Download JSON</button>
+        <form style="float: right; display: inline; width: 42%; " >
+            <input type="button" class="btn btn-dark" name="download_JSON" value="Download JSON" onclick="window.location.href='{{ document.json_url }}'" />
         </form>
 
          <form style="float: right; display: inline; width: 12%;" >

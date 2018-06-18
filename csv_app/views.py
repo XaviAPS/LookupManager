@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
 from csv_app.forms import DocumentForm
 from csv_app.models import *
-from csv_app.utils import importCSV_inDB, exportCSV_fromDB, deleteCSV_fromDB, exportLog_fromDB
+from csv_app.utils import *
 from django.contrib.auth import *
 import os
 import shutil
@@ -20,12 +20,22 @@ def detail(request, document_slug):
     try:
         existing_doc = Document.objects.get(slug = document_slug)
         csv_content, header_list = exportCSV_fromDB('./media/' + existing_doc.docfile.name, './mydatabase')
+
     except Document.DoesNotExist:
         raise Http404("Document does not exist")
 
+    csv_to_JSON('./media/' + existing_doc.docfile.name, './media/tmp/tmp.json')
     form = DocumentForm(request.POST, request.FILES)
+    print('URL: ', existing_doc.docfile.url)
+    print('newurl: ',existing_doc.json_url)
+
+    if request.GET.get("download_JSON"):
+        print("asdasdasd")
+        print(type(existing_doc.docfile.url))
+
     if form.is_valid():
         newdoc = Document(docfile=request.FILES['docfile'])
+
         if newdoc.docfile.name != existing_doc.docfile.name:
             newdoc.docfile.name = existing_doc.docfile.name
             newdoc.title = existing_doc.title
@@ -68,7 +78,6 @@ def detail(request, document_slug):
             print('existing_doc.docfile.name', existing_doc.docfile.name)
 
             Document.objects.filter(id=existing_doc.id).delete()
-
             existing_doc = Document.objects.get(slug=document_slug)
             deleteCSV_fromDB('./media/' + existing_doc.docfile.name, './mydatabase')
             importCSV_inDB('./media/' + newdoc.docfile.name, './mydatabase')

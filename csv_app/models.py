@@ -12,10 +12,13 @@ class Document(models.Model):
     last_update = models.DateField(default=timezone.now)
     state = models.CharField(max_length=30, default = 'OK')
     slug = models.SlugField(allow_unicode=True,max_length=25, null=False)
+    json_url = models.CharField(max_length=40, default='/media/tmp/converted.json')
 
     def __str__(self):
         return "%s" % (self.title)
 
+    def setJson_url(_jsonURL):
+        json_url = _jsonURL
 
 class Log(models.Model):
     user = models.CharField(max_length=25, default='unknown')

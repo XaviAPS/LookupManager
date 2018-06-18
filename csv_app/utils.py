@@ -186,10 +186,10 @@ def csv_to_JSON(file, json_file):
 
 
     with open(json_file, "rt") as json_r:
-        with open('docs/final.json', "wt") as json_w:
+        with open('./media/tmp/converted.json', "wt") as json_w:
             for line in json_r:
                 if 'coords' in line:
-                    json_w.write(((line.replace('asd', '"')).replace('"{','{')).replace('}"', "}").replace('"Point",','"Point",\n\t\t\t\t'))
+                    json_w.write(((line.replace('asd', '"')).replace('"{','{')).replace('}"', "}").replace('"Point",','"Point",\n\t\t'))
                     print(line)
                 else:
                     json_w.write(line)
